@@ -1,0 +1,2217 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Harrison Chase
+# This file is distributed under the same license as the 🦜🔗 LangChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 🦜🔗 LangChain 0.0.150\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 12:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/ecosystem.rst:2
+msgid "LangChain Ecosystem"
+msgstr ""
+
+#: ../docs/ecosystem.rst:4
+msgid "Guides for how other companies/products can be used with LangChain"
+msgstr ""
+
+#: ../docs/ecosystem.rst:7
+msgid "Groups"
+msgstr ""
+
+#: ../docs/ecosystem.rst:9
+msgid "LangChain provides integration with many LLMs and systems:"
+msgstr ""
+
+#: ../docs/ecosystem.rst:11
+msgid "`LLM Providers <./modules/models/llms/integrations.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:12
+msgid "`Chat Model Providers <./modules/models/chat/integrations.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:13
+msgid "`Text Embedding Model Providers <./modules/models/text_embedding.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:14
+msgid "`Document Loader Integrations <./modules/indexes/document_loaders.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:15
+msgid "`Text Splitter Integrations <./modules/indexes/text_splitters.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:16
+msgid "`Vectorstore Providers <./modules/indexes/vectorstores.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:17
+msgid "`Retriever Providers <./modules/indexes/retrievers.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:18
+msgid "`Tool Providers <./modules/agents/tools.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:19
+msgid "`Toolkit Integrations <./modules/agents/toolkits.html>`_"
+msgstr ""
+
+#: ../docs/ecosystem.rst:22
+msgid "Companies / Products"
+msgstr ""
+
+#: ../docs/ecosystem/ai21.md:1
+msgid "AI21 Labs"
+msgstr ""
+
+#: ../docs/ecosystem/ai21.md:3
+msgid "This page covers how to use the AI21 ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific AI21 wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/ai21.md:6
+#: ../docs/ecosystem/apify.md:18
+#: ../docs/ecosystem/atlas.md:6
+#: ../docs/ecosystem/bananadev.md:6
+#: ../docs/ecosystem/cerebriumai.md:6
+#: ../docs/ecosystem/chroma.md:6
+#: ../docs/ecosystem/cohere.md:6
+#: ../docs/ecosystem/deepinfra.md:6
+#: ../docs/ecosystem/deeplake.md:15
+#: ../docs/ecosystem/forefrontai.md:6
+#: ../docs/ecosystem/google_search.md:6
+#: ../docs/ecosystem/gooseai.md:6
+#: ../docs/ecosystem/gpt4all.md:5
+#: ../docs/ecosystem/graphsignal.md:5
+#: ../docs/ecosystem/hazy_research.md:6
+#: ../docs/ecosystem/huggingface.md:6
+#: ../docs/ecosystem/jina.md:6
+#: ../docs/ecosystem/llamacpp.md:6
+#: ../docs/ecosystem/milvus.md:6
+#: ../docs/ecosystem/modal.md:6
+#: ../docs/ecosystem/myscale.md:18
+#: ../docs/ecosystem/nlpcloud.md:6
+#: ../docs/ecosystem/openai.md:6
+#: ../docs/ecosystem/opensearch.md:6
+#: ../docs/ecosystem/petals.md:6
+#: ../docs/ecosystem/pinecone.md:6
+#: ../docs/ecosystem/predictionguard.md:6
+#: ../docs/ecosystem/promptlayer.md:6
+#: ../docs/ecosystem/qdrant.md:6
+#: ../docs/ecosystem/replicate.md:4
+#: ../docs/ecosystem/runhouse.md:6
+#: ../docs/ecosystem/rwkv.md:6
+#: ../docs/ecosystem/searx.md:6
+#: ../docs/ecosystem/serpapi.md:6
+#: ../docs/ecosystem/stochasticai.md:6
+#: ../docs/ecosystem/unstructured.md:12
+#: ../docs/ecosystem/weaviate.md:19
+#: ../docs/ecosystem/wolfram_alpha.md:6
+#: ../docs/ecosystem/writer.md:6
+#: ../docs/ecosystem/zilliz.md:7
+msgid "Installation and Setup"
+msgstr ""
+
+#: ../docs/ecosystem/ai21.md:7
+msgid "Get an AI21 api key and set it as an environment variable (`AI21_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/ai21.md:9
+#: ../docs/ecosystem/apify.md:25
+#: ../docs/ecosystem/atlas.md:10
+#: ../docs/ecosystem/bananadev.md:65
+#: ../docs/ecosystem/cerebriumai.md:10
+#: ../docs/ecosystem/chroma.md:8
+#: ../docs/ecosystem/cohere.md:10
+#: ../docs/ecosystem/deepinfra.md:10
+#: ../docs/ecosystem/deeplake.md:18
+#: ../docs/ecosystem/forefrontai.md:9
+#: ../docs/ecosystem/google_search.md:11
+#: ../docs/ecosystem/google_serper.md:10
+#: ../docs/ecosystem/gooseai.md:16
+#: ../docs/ecosystem/hazy_research.md:9
+#: ../docs/ecosystem/huggingface.md:17
+#: ../docs/ecosystem/jina.md:10
+#: ../docs/ecosystem/llamacpp.md:10
+#: ../docs/ecosystem/milvus.md:8
+#: ../docs/ecosystem/modal.md:59
+#: ../docs/ecosystem/myscale.md:43
+#: ../docs/ecosystem/nlpcloud.md:10
+#: ../docs/ecosystem/openai.md:11
+#: ../docs/ecosystem/opensearch.md:8
+#: ../docs/ecosystem/petals.md:10
+#: ../docs/ecosystem/pgvector.md:15
+#: ../docs/ecosystem/pinecone.md:8
+#: ../docs/ecosystem/promptlayer.md:13
+#: ../docs/ecosystem/qdrant.md:8
+#: ../docs/ecosystem/searx.md:32
+#: ../docs/ecosystem/serpapi.md:10
+#: ../docs/ecosystem/stochasticai.md:10
+#: ../docs/ecosystem/unstructured.md:28
+#: ../docs/ecosystem/weaviate.md:21
+#: ../docs/ecosystem/wolfram_alpha.md:13
+#: ../docs/ecosystem/writer.md:9
+#: ../docs/ecosystem/zilliz.md:9
+msgid "Wrappers"
+msgstr ""
+
+#: ../docs/ecosystem/ai21.md:11
+#: ../docs/ecosystem/bananadev.md:67
+#: ../docs/ecosystem/cerebriumai.md:12
+#: ../docs/ecosystem/cohere.md:12
+#: ../docs/ecosystem/deepinfra.md:12
+#: ../docs/ecosystem/forefrontai.md:11
+#: ../docs/ecosystem/gooseai.md:18
+#: ../docs/ecosystem/hazy_research.md:11
+#: ../docs/ecosystem/huggingface.md:19
+#: ../docs/ecosystem/llamacpp.md:12
+#: ../docs/ecosystem/modal.md:61
+#: ../docs/ecosystem/nlpcloud.md:12
+#: ../docs/ecosystem/openai.md:13
+#: ../docs/ecosystem/petals.md:12
+#: ../docs/ecosystem/promptlayer.md:15
+#: ../docs/ecosystem/stochasticai.md:12
+#: ../docs/ecosystem/writer.md:11
+msgid "LLM"
+msgstr ""
+
+#: ../docs/ecosystem/ai21.md:13
+msgid "There exists an AI21 LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:10002
+msgid "Aim"
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:10004
+msgid "Aim makes it super easy to visualize and debug LangChain executions. Aim tracks inputs and outputs of LLMs and tools, as well as actions of agents."
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:10006
+msgid "With Aim, you can easily debug and examine an individual execution:"
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:10008
+msgid "![](https://user-images.githubusercontent.com/13848158/227784778-06b806c7-74a1-4d15-ab85-9ece09b458aa.png)"
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:10010
+msgid "Additionally, you have the option to compare multiple executions side by side:"
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:10012
+msgid "![](https://user-images.githubusercontent.com/13848158/227784994-699b24b7-e69b-48f9-9ffa-e6a6142fd719.png)"
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:10014
+msgid "Aim is fully open source, [learn more](https://github.com/aimhubio/aim) about Aim on GitHub."
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:10016
+msgid "Let's move forward and see how to enable and configure Aim callback."
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:30002
+msgid "In this notebook we will explore three usage scenarios. To start off, we will install the necessary packages and import certain modules. Subsequently, we will configure two environment variables that can be established either within the Python script or through the terminal."
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:60002
+msgid "Our examples use a GPT model as the LLM, and OpenAI offers an API for this purpose. You can obtain the key from the following link: https://platform.openai.com/account/api-keys ."
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:60004
+msgid "We will use the SerpApi to retrieve search results from Google. To acquire the SerpApi key, please go to https://serpapi.com/manage-api-key ."
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:80002
+msgid "The event methods of `AimCallbackHandler` accept the LangChain module or agent as input and log at least the prompts and generated results, as well as the serialized version of the LangChain module, to the designated Aim run."
+msgstr ""
+
+#: ../docs/ecosystem/aim_tracking.ipynb:100002
+msgid "The `flush_tracker` function is used to record LangChain assets on Aim. By default, the session is reset rather than being terminated outright."
+msgstr ""
+
+#: ../docs/ecosystem/analyticdb.md:1
+msgid "AnalyticDB"
+msgstr ""
+
+#: ../docs/ecosystem/analyticdb.md:3
+msgid "This page covers how to use the AnalyticDB ecosystem within LangChain."
+msgstr ""
+
+#: ../docs/ecosystem/analyticdb.md:5
+#: ../docs/ecosystem/atlas.md:12
+#: ../docs/ecosystem/chroma.md:10
+#: ../docs/ecosystem/deeplake.md:20
+#: ../docs/ecosystem/milvus.md:10
+#: ../docs/ecosystem/myscale.md:55
+#: ../docs/ecosystem/opensearch.md:10
+#: ../docs/ecosystem/pgvector.md:17
+#: ../docs/ecosystem/pinecone.md:10
+#: ../docs/ecosystem/qdrant.md:10
+#: ../docs/ecosystem/weaviate.md:23
+#: ../docs/ecosystem/zilliz.md:11
+msgid "VectorStore"
+msgstr ""
+
+#: ../docs/ecosystem/analyticdb.md:7
+msgid "There exists a wrapper around AnalyticDB, allowing you to use it as a vectorstore, whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/analyticdb.md:10
+#: ../docs/ecosystem/atlas.md:22
+#: ../docs/ecosystem/chroma.md:15
+#: ../docs/ecosystem/deeplake.md:24
+#: ../docs/ecosystem/milvus.md:15
+#: ../docs/ecosystem/myscale.md:60
+#: ../docs/ecosystem/opensearch.md:16
+#: ../docs/ecosystem/pgvector.md:22
+#: ../docs/ecosystem/pinecone.md:15
+#: ../docs/ecosystem/qdrant.md:15
+#: ../docs/ecosystem/weaviate.md:28
+#: ../docs/ecosystem/zilliz.md:16
+msgid "To import this vectorstore:"
+msgstr ""
+
+#: ../docs/ecosystem/analyticdb.md:15
+msgid "For a more detailed walkthrough of the AnalyticDB wrapper, see [this notebook](../modules/indexes/vectorstores/examples/analyticdb.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:1
+msgid "Apify"
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:3
+msgid "This page covers how to use [Apify](https://apify.com) within LangChain."
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:5
+msgid "Overview"
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:7
+msgid "Apify is a cloud platform for web scraping and data extraction, which provides an [ecosystem](https://apify.com/store) of more than a thousand ready-made apps called *Actors* for various scraping, crawling, and extraction use cases."
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:11
+msgid "[![Apify Actors](../_static/ApifyActors.png)](https://apify.com/store)"
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:11
+msgid "Apify Actors"
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:13
+msgid "This integration enables you run Actors on the Apify platform and load their results into LangChain to feed your vector indexes with documents and data from the web, e.g. to generate answers from websites with documentation, blogs, or knowledge bases."
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:20
+msgid "Install the Apify API client for Python with `pip install apify-client`"
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:21
+msgid "Get your [Apify API token](https://console.apify.com/account/integrations) and either set it as an environment variable (`APIFY_API_TOKEN`) or pass it to the `ApifyWrapper` as `apify_api_token` in the constructor."
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:27
+#: ../docs/ecosystem/google_search.md:13
+#: ../docs/ecosystem/google_serper.md:12
+#: ../docs/ecosystem/searx.md:34
+#: ../docs/ecosystem/serpapi.md:12
+#: ../docs/ecosystem/wolfram_alpha.md:15
+msgid "Utility"
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:29
+msgid "You can use the `ApifyWrapper` to run Actors on the Apify platform."
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:35
+msgid "For a more detailed walkthrough of this wrapper, see [this notebook](../modules/agents/tools/examples/apify.ipynb)."
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:38
+msgid "Loader"
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:40
+msgid "You can also use our `ApifyDatasetLoader` to get data from Apify dataset."
+msgstr ""
+
+#: ../docs/ecosystem/apify.md:46
+msgid "For a more detailed walkthrough of this loader, see [this notebook](../modules/indexes/document_loaders/examples/apify_dataset.ipynb)."
+msgstr ""
+
+#: ../docs/ecosystem/atlas.md:1
+msgid "AtlasDB"
+msgstr ""
+
+#: ../docs/ecosystem/atlas.md:3
+msgid "This page covers how to use Nomic's Atlas ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Atlas wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/atlas.md:7
+msgid "Install the Python package with `pip install nomic`"
+msgstr ""
+
+#: ../docs/ecosystem/atlas.md:8
+msgid "Nomic is also included in langchains poetry extras `poetry install -E all`"
+msgstr ""
+
+#: ../docs/ecosystem/atlas.md:14
+msgid "There exists a wrapper around the Atlas neural database, allowing you to use it as a vectorstore. This vectorstore also gives you full access to the underlying AtlasProject object, which will allow you to use the full range of Atlas map interactions, such as bulk tagging and automatic topic modeling. Please see [the Atlas docs](https://docs.nomic.ai/atlas_api.html) for more detailed information."
+msgstr ""
+
+#: ../docs/ecosystem/atlas.md:27
+msgid "For a more detailed walkthrough of the AtlasDB wrapper, see [this notebook](../modules/indexes/vectorstores/examples/atlas.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:1
+msgid "Banana"
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:3
+msgid "This page covers how to use the Banana ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Banana wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:8
+msgid "Install with `pip install banana-dev`"
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:9
+msgid "Get an Banana api key and set it as an environment variable (`BANANA_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:11
+msgid "Define your Banana Template"
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:13
+msgid "If you want to use an available language model template you can find one [here](https://app.banana.dev/templates/conceptofmind/serverless-template-palmyra-base). This template uses the Palmyra-Base model by [Writer](https://writer.com/product/api/). You can check out an example Banana repository [here](https://github.com/conceptofmind/serverless-template-palmyra-base)."
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:17
+msgid "Build the Banana app"
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:19
+msgid "Banana Apps must include the \"output\" key in the return json.  There is a rigid response structure."
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:27
+msgid "An example inference function would be:"
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:63
+msgid "You can find a full example of a Banana app [here](https://github.com/conceptofmind/serverless-template-palmyra-base/blob/main/app.py)."
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:69
+msgid "There exists an Banana LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/bananadev.md:75
+msgid "You need to provide a model key located in the dashboard:"
+msgstr ""
+
+#: ../docs/ecosystem/cerebriumai.md:1
+msgid "CerebriumAI"
+msgstr ""
+
+#: ../docs/ecosystem/cerebriumai.md:3
+msgid "This page covers how to use the CerebriumAI ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific CerebriumAI wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/cerebriumai.md:7
+msgid "Install with `pip install cerebrium`"
+msgstr ""
+
+#: ../docs/ecosystem/cerebriumai.md:8
+msgid "Get an CerebriumAI api key and set it as an environment variable (`CEREBRIUMAI_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/cerebriumai.md:14
+msgid "There exists an CerebriumAI LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/chroma.md:1
+msgid "Chroma"
+msgstr ""
+
+#: ../docs/ecosystem/chroma.md:3
+msgid "This page covers how to use the Chroma ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Chroma wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/chroma.md:7
+msgid "Install the Python package with `pip install chromadb`"
+msgstr ""
+
+#: ../docs/ecosystem/chroma.md:12
+msgid "There exists a wrapper around Chroma vector databases, allowing you to use it as a vectorstore, whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/chroma.md:20
+msgid "For a more detailed walkthrough of the Chroma wrapper, see [this notebook](../modules/indexes/vectorstores/getting_started.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:10002
+msgid "ClearML Integration"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:10004
+msgid "In order to properly keep track of your langchain experiments and their results, you can enable the ClearML integration. ClearML is an experiment manager that neatly tracks and organizes all your experiment runs."
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:20002
+msgid "Getting API Credentials"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:20004
+msgid "We'll be using quite some APIs in this notebook, here is a list and where to get them:"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:20006
+msgid "ClearML: https://app.clear.ml/settings/workspace-configuration"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:20007
+msgid "OpenAI: https://platform.openai.com/account/api-keys"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:20008
+msgid "SerpAPI (google search): https://serpapi.com/dashboard"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:40002
+msgid "Setting Up"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:70002
+msgid "Scenario 1: Just an LLM"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:70004
+msgid "First, let's just run a single LLM a few times and capture the resulting prompt-answer conversation in ClearML"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:90002
+msgid "At this point you can already go to https://app.clear.ml and take a look at the resulting ClearML Task that was created."
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:90004
+msgid "Among others, you should see that this notebook is saved along with any git information. The model JSON that contains the used parameters is saved as an artifact, there are also console logs and under the plots section, you'll find tables that represent the flow of the chain."
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:90006
+msgid "Finally, if you enabled visualizations, these are stored as HTML files under debug samples."
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:100002
+msgid "Scenario 2: Creating an agent with tools"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:100004
+msgid "To show a more advanced workflow, let's create an agent with access to tools. The way ClearML tracks the results is not different though, only the table will look slightly different as there are other types of actions taken when compared to the earlier, simpler example."
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:100006
+msgid "You can now also see the use of the `finish=True` keyword, which will fully close the ClearML Task, instead of just resetting the parameters and prompts for a new conversation."
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:120002
+msgid "Tips and Next Steps"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:120004
+msgid "Make sure you always use a unique `name` argument for the `clearml_callback.flush_tracker` function. If not, the model parameters used for a run will override the previous run!"
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:120006
+msgid "If you close the ClearML Callback using `clearml_callback.flush_tracker(..., finish=True)` the Callback cannot be used anymore. Make a new one if you want to keep logging."
+msgstr ""
+
+#: ../docs/ecosystem/clearml_tracking.ipynb:120008
+msgid "Check out the rest of the open source ClearML ecosystem, there is a data version manager, a remote execution agent, automated pipelines and much more!"
+msgstr ""
+
+#: ../docs/ecosystem/cohere.md:1
+msgid "Cohere"
+msgstr ""
+
+#: ../docs/ecosystem/cohere.md:3
+msgid "This page covers how to use the Cohere ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Cohere wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/cohere.md:7
+msgid "Install the Python SDK with `pip install cohere`"
+msgstr ""
+
+#: ../docs/ecosystem/cohere.md:8
+msgid "Get an Cohere api key and set it as an environment variable (`COHERE_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/cohere.md:14
+msgid "There exists an Cohere LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/cohere.md:19
+#: ../docs/ecosystem/huggingface.md:36
+#: ../docs/ecosystem/jina.md:12
+#: ../docs/ecosystem/llamacpp.md:20
+#: ../docs/ecosystem/openai.md:28
+msgid "Embeddings"
+msgstr ""
+
+#: ../docs/ecosystem/cohere.md:21
+msgid "There exists an Cohere Embeddings wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/cohere.md:25
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/models/text_embedding/examples/cohere.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:10002
+msgid "Comet"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:20002
+msgid "![](https://user-images.githubusercontent.com/7529846/230328046-a8b18c51-12e3-4617-9b39-97614a571a2d.png)"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:30002
+msgid "In this guide we will demonstrate how to track your Langchain Experiments, Evaluation Metrics, and LLM Sessions with [Comet](https://www.comet.com/site/?utm_source=langchain&utm_medium=referral&utm_campaign=comet_notebook)."
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:30008
+msgid "**Example Project:** [Comet with LangChain](https://www.comet.com/examples/comet-example-langchain/view/b5ZThK6OFdhKWVSP3fDfRtrNF/panels?utm_source=langchain&utm_medium=referral&utm_campaign=comet_notebook)"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:50002
+msgid "Install Comet and Dependencies"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:70002
+msgid "Initialize Comet and Set your Credentials"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:80002
+msgid "You can grab your [Comet API Key here](https://www.comet.com/signup?utm_source=langchain&utm_medium=referral&utm_campaign=comet_notebook) or click the link after initializing Comet"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:100002
+msgid "Set OpenAI and SerpAPI credentials"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:110002
+msgid "You will need an [OpenAI API Key](https://platform.openai.com/account/api-keys) and a [SerpAPI API Key](https://serpapi.com/dashboard) to run the following examples"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:130002
+msgid "Scenario 1: Using just an LLM"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:150002
+msgid "Scenario 2: Using an LLM in a Chain"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:170002
+msgid "Scenario 3: Using An Agent with Tools"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:190002
+msgid "Scenario 4: Using Custom Evaluation Metrics"
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:200002
+msgid "The `CometCallbackManager` also allows you to define and use Custom Evaluation Metrics to assess generated outputs from your model. Let's take a look at how this works."
+msgstr ""
+
+#: ../docs/ecosystem/comet_tracking.ipynb:200005
+msgid "In the snippet below, we will use the [ROUGE](https://huggingface.co/spaces/evaluate-metric/rouge) metric to evaluate the quality of a generated summary of an input prompt."
+msgstr ""
+
+#: ../docs/ecosystem/databerry.md:1
+#: ../docs/ecosystem/databerry.md:9
+msgid "Databerry"
+msgstr ""
+
+#: ../docs/ecosystem/databerry.md:3
+msgid "This page covers how to use the [Databerry](https://databerry.ai) within LangChain."
+msgstr ""
+
+#: ../docs/ecosystem/databerry.md:5
+msgid "What is Databerry?"
+msgstr ""
+
+#: ../docs/ecosystem/databerry.md:7
+msgid "Databerry is an [open source](https://github.com/gmpetrov/databerry) document retrievial platform that helps to connect your personal data with Large Language Models."
+msgstr ""
+
+#: ../docs/ecosystem/databerry.md:9
+msgid "![Databerry](../_static/DataberryDashboard.png)"
+msgstr ""
+
+#: ../docs/ecosystem/databerry.md:11
+#: ../docs/ecosystem/helicone.md:11
+#: ../docs/ecosystem/metal.md:11
+msgid "Quick start"
+msgstr ""
+
+#: ../docs/ecosystem/databerry.md:13
+msgid "Retrieving documents stored in Databerry from LangChain is very easy!"
+msgstr ""
+
+#: ../docs/ecosystem/deepinfra.md:1
+msgid "DeepInfra"
+msgstr ""
+
+#: ../docs/ecosystem/deepinfra.md:3
+msgid "This page covers how to use the DeepInfra ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific DeepInfra wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/deepinfra.md:7
+msgid "Get your DeepInfra api key from this link [here](https://deepinfra.com/)."
+msgstr ""
+
+#: ../docs/ecosystem/deepinfra.md:8
+msgid "Get an DeepInfra api key and set it as an environment variable (`DEEPINFRA_API_TOKEN`)"
+msgstr ""
+
+#: ../docs/ecosystem/deepinfra.md:14
+msgid "There exists an DeepInfra LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:1
+msgid "Deep Lake"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:2
+msgid "This page covers how to use the Deep Lake ecosystem within LangChain."
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:4
+msgid "Why Deep Lake?"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:5
+msgid "More than just a (multi-modal) vector store. You can later use the dataset to fine-tune your own LLM models."
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:6
+msgid "Not only stores embeddings, but also the original data with automatic version control."
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:7
+msgid "Truly serverless. Doesn't require another service and can be used with major cloud providers (AWS S3, GCS, etc.)"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:9
+msgid "More Resources"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:10
+msgid "[Ultimate Guide to LangChain & Deep Lake: Build ChatGPT to Answer Questions on Your Financial Data](https://www.activeloop.ai/resources/ultimate-guide-to-lang-chain-deep-lake-build-chat-gpt-to-answer-questions-on-your-financial-data/)"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:11
+msgid "[Twitter the-algorithm codebase analysis with Deep Lake](../use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:12
+msgid "Here is [whitepaper](https://www.deeplake.ai/whitepaper) and [academic paper](https://arxiv.org/pdf/2209.10785.pdf) for Deep Lake"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:13
+msgid "Here is a set of additional resources available for review: [Deep Lake](https://github.com/activeloopai/deeplake), [Getting Started](https://docs.activeloop.ai/getting-started) and [Tutorials](https://docs.activeloop.ai/hub-tutorials)"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:16
+msgid "Install the Python package with `pip install deeplake`"
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:22
+msgid "There exists a wrapper around Deep Lake, a data lake for Deep Learning applications, allowing you to use it as a vector store (for now), whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/deeplake.md:30
+msgid "For a more detailed walkthrough of the Deep Lake wrapper, see [this notebook](../modules/indexes/vectorstores/examples/deeplake.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/forefrontai.md:1
+msgid "ForefrontAI"
+msgstr ""
+
+#: ../docs/ecosystem/forefrontai.md:3
+msgid "This page covers how to use the ForefrontAI ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific ForefrontAI wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/forefrontai.md:7
+msgid "Get an ForefrontAI api key and set it as an environment variable (`FOREFRONTAI_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/forefrontai.md:13
+msgid "There exists an ForefrontAI LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:1
+msgid "Google Search Wrapper"
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:3
+msgid "This page covers how to use the Google Search API within LangChain. It is broken into two parts: installation and setup, and then references to the specific Google Search wrapper."
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:7
+msgid "Install requirements with `pip install google-api-python-client`"
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:8
+msgid "Set up a Custom Search Engine, following [these instructions](https://stackoverflow.com/questions/37083058/programmatically-searching-google-in-python-using-custom-search)"
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:9
+msgid "Get an API Key and Custom Search Engine ID from the previous step, and set them as environment variables `GOOGLE_API_KEY` and `GOOGLE_CSE_ID` respectively"
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:15
+msgid "There exists a GoogleSearchAPIWrapper utility which wraps this API. To import this utility:"
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:21
+msgid "For a more detailed walkthrough of this wrapper, see [this notebook](../modules/agents/tools/examples/google_search.ipynb)."
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:23
+#: ../docs/ecosystem/google_serper.md:64
+#: ../docs/ecosystem/searx.md:48
+#: ../docs/ecosystem/serpapi.md:22
+#: ../docs/ecosystem/wolfram_alpha.md:25
+msgid "Tool"
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:25
+#: ../docs/ecosystem/google_serper.md:66
+#: ../docs/ecosystem/serpapi.md:24
+#: ../docs/ecosystem/wolfram_alpha.md:27
+msgid "You can also easily load this wrapper as a Tool (to use with an Agent). You can do this with:"
+msgstr ""
+
+#: ../docs/ecosystem/google_search.md:32
+#: ../docs/ecosystem/google_serper.md:73
+#: ../docs/ecosystem/serpapi.md:31
+#: ../docs/ecosystem/wolfram_alpha.md:34
+msgid "For more information on this, see [this page](../modules/agents/tools/getting_started.md)"
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:1
+msgid "Google Serper Wrapper"
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:3
+msgid "This page covers how to use the [Serper](https://serper.dev) Google Search API within LangChain. Serper is a low-cost Google Search API that can be used to add answer box, knowledge graph, and organic results data from Google Search.  It is broken into two parts: setup, and then references to the specific Google Serper wrapper."
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:6
+#: ../docs/ecosystem/pgvector.md:10
+msgid "Setup"
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:7
+msgid "Go to [serper.dev](https://serper.dev) to sign up for a free account"
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:8
+msgid "Get the api key and set it as an environment variable (`SERPER_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:14
+msgid "There exists a GoogleSerperAPIWrapper utility which wraps this API. To import this utility:"
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:20
+msgid "You can use it as part of a Self Ask chain:"
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:47
+msgid "Output"
+msgstr ""
+
+#: ../docs/ecosystem/google_serper.md:62
+msgid "For a more detailed walkthrough of this wrapper, see [this notebook](../modules/agents/tools/examples/google_serper.ipynb)."
+msgstr ""
+
+#: ../docs/ecosystem/gooseai.md:1
+msgid "GooseAI"
+msgstr ""
+
+#: ../docs/ecosystem/gooseai.md:3
+msgid "This page covers how to use the GooseAI ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific GooseAI wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/gooseai.md:7
+#: ../docs/ecosystem/openai.md:7
+msgid "Install the Python SDK with `pip install openai`"
+msgstr ""
+
+#: ../docs/ecosystem/gooseai.md:8
+msgid "Get your GooseAI api key from this link [here](https://goose.ai/)."
+msgstr ""
+
+#: ../docs/ecosystem/gooseai.md:9
+msgid "Set the environment variable (`GOOSEAI_API_KEY`)."
+msgstr ""
+
+#: ../docs/ecosystem/gooseai.md:20
+msgid "There exists an GooseAI LLM wrapper, which you can access with:"
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:1
+#: ../docs/ecosystem/gpt4all.md:11
+msgid "GPT4All"
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:3
+msgid "This page covers how to use the `GPT4All` wrapper within LangChain. The tutorial is divided into two parts: installation and setup, followed by usage with an example."
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:6
+msgid "Install the Python package with `pip install pyllamacpp`"
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:7
+msgid "Download a [GPT4All model](https://github.com/nomic-ai/pyllamacpp#supported-model) and place it in your desired directory"
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:9
+#: ../docs/ecosystem/pgvector.md:27
+#: ../docs/ecosystem/rwkv.md:12
+msgid "Usage"
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:13
+msgid "To use the GPT4All wrapper, you need to provide the path to the pre-trained model file and the model's configuration."
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:25
+msgid "You can also customize the generation parameters, such as n_predict, temp, top_p, top_k, and others."
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:27
+msgid "To stream the model's predictions, add in a CallbackManager."
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:43
+#: ../docs/ecosystem/rwkv.md:49
+msgid "Model File"
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:45
+msgid "You can find links to model file downloads in the [pyllamacpp](https://github.com/nomic-ai/pyllamacpp) repository."
+msgstr ""
+
+#: ../docs/ecosystem/gpt4all.md:47
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/models/llms/integrations/gpt4all.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:1
+msgid "Graphsignal"
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:3
+msgid "This page covers how to use [Graphsignal](https://app.graphsignal.com) to trace and monitor LangChain. Graphsignal enables full visibility into your application. It provides latency breakdowns by chains and tools, exceptions with full context, data monitoring, compute/GPU utilization, OpenAI cost analytics, and more."
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:7
+msgid "Install the Python library with `pip install graphsignal`"
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:8
+msgid "Create free Graphsignal account [here](https://graphsignal.com)"
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:9
+msgid "Get an API key and set it as an environment variable (`GRAPHSIGNAL_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:11
+msgid "Tracing and Monitoring"
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:13
+msgid "Graphsignal automatically instruments and starts tracing and monitoring chains. Traces and metrics are then available in your [Graphsignal dashboards](https://app.graphsignal.com)."
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:15
+msgid "Initialize the tracer by providing a deployment name:"
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:23
+msgid "To additionally trace any function or code, you can use a decorator or a context manager:"
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:36
+msgid "Optionally, enable profiling to record function-level statistics for each trace."
+msgstr ""
+
+#: ../docs/ecosystem/graphsignal.md:44
+msgid "See the [Quick Start](https://graphsignal.com/docs/guides/quick-start/) guide for complete setup instructions."
+msgstr ""
+
+#: ../docs/ecosystem/hazy_research.md:1
+msgid "Hazy Research"
+msgstr ""
+
+#: ../docs/ecosystem/hazy_research.md:3
+msgid "This page covers how to use the Hazy Research ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Hazy Research wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/hazy_research.md:7
+msgid "To use the `manifest`, install it with `pip install manifest-ml`"
+msgstr ""
+
+#: ../docs/ecosystem/hazy_research.md:13
+msgid "There exists an LLM wrapper around Hazy Research's `manifest` library.  `manifest` is a python library which is itself a wrapper around many model providers, and adds in caching, history, and more."
+msgstr ""
+
+#: ../docs/ecosystem/hazy_research.md:16
+msgid "To use this wrapper:"
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:1
+#: ../docs/ecosystem/helicone.md:9
+#: ../docs/ecosystem/helicone.md:21
+msgid "Helicone"
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:3
+msgid "This page covers how to use the [Helicone](https://helicone.ai) ecosystem within LangChain."
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:5
+msgid "What is Helicone?"
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:7
+msgid "Helicone is an [open source](https://github.com/Helicone/helicone) observability platform that proxies your OpenAI traffic and provides you key insights into your spend, latency and usage."
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:9
+msgid "![Helicone](../_static/HeliconeDashboard.png)"
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:13
+msgid "With your LangChain environment you can just add the following parameter."
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:19
+msgid "Now head over to [helicone.ai](https://helicone.ai/onboarding?step=2) to create your account, and add your OpenAI API key within our dashboard to view your logs."
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:21
+msgid "![Helicone](../_static/HeliconeKeys.png)"
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:23
+msgid "How to enable Helicone caching"
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:35
+msgid "[Helicone caching docs](https://docs.helicone.ai/advanced-usage/caching)"
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:37
+msgid "How to use Helicone custom properties"
+msgstr ""
+
+#: ../docs/ecosystem/helicone.md:53
+msgid "[Helicone property docs](https://docs.helicone.ai/advanced-usage/custom-properties)"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:1
+msgid "Hugging Face"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:3
+msgid "This page covers how to use the Hugging Face ecosystem (including the [Hugging Face Hub](https://huggingface.co)) within LangChain. It is broken into two parts: installation and setup, and then references to specific Hugging Face wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:8
+msgid "If you want to work with the Hugging Face Hub:"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:9
+msgid "Install the Hub client library with `pip install huggingface_hub`"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:10
+msgid "Create a Hugging Face account (it's free!)"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:11
+msgid "Create an [access token](https://huggingface.co/docs/hub/security-tokens) and set it as an environment variable (`HUGGINGFACEHUB_API_TOKEN`)"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:13
+msgid "If you want work with the Hugging Face Python libraries:"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:14
+msgid "Install `pip install transformers` for working with models and tokenizers"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:15
+msgid "Install `pip install datasets` for working with datasets"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:21
+msgid "There exists two Hugging Face LLM wrappers, one for a local pipeline and one for a model hosted on Hugging Face Hub. Note that these wrappers only work for models that support the following tasks: [`text2text-generation`](https://huggingface.co/models?library=transformers&pipeline_tag=text2text-generation&sort=downloads), [`text-generation`](https://huggingface.co/models?library=transformers&pipeline_tag=text-classification&sort=downloads)"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:24
+#: ../docs/ecosystem/huggingface.md:41
+msgid "To use the local pipeline wrapper:"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:29
+#: ../docs/ecosystem/huggingface.md:46
+msgid "To use a the wrapper for a model hosted on Hugging Face Hub:"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:33
+msgid "For a more detailed walkthrough of the Hugging Face Hub wrapper, see [this notebook](../modules/models/llms/integrations/huggingface_hub.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:38
+msgid "There exists two Hugging Face Embeddings wrappers, one for a local model and one for a model hosted on Hugging Face Hub. Note that these wrappers only work for [`sentence-transformers` models](https://huggingface.co/models?library=sentence-transformers&sort=downloads)."
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:50
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/models/text_embedding/examples/huggingfacehub.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:52
+#: ../docs/ecosystem/openai.md:37
+msgid "Tokenizer"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:54
+msgid "There are several places you can use tokenizers available through the `transformers` package. By default, it is used to count tokens for all LLMs."
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:57
+#: ../docs/ecosystem/openai.md:42
+msgid "You can also use it to count tokens when splitting documents with"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:62
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/indexes/text_splitters/examples/huggingface_length_function.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:65
+msgid "Datasets"
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:67
+msgid "The Hugging Face Hub has lots of great [datasets](https://huggingface.co/datasets) that can be used to evaluate your LLM chains."
+msgstr ""
+
+#: ../docs/ecosystem/huggingface.md:69
+msgid "For a detailed walkthrough of how to use them to do so, see [this notebook](../use_cases/evaluation/huggingface_datasets.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/jina.md:1
+msgid "Jina"
+msgstr ""
+
+#: ../docs/ecosystem/jina.md:3
+msgid "This page covers how to use the Jina ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Jina wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/jina.md:7
+msgid "Install the Python SDK with `pip install jina`"
+msgstr ""
+
+#: ../docs/ecosystem/jina.md:8
+msgid "Get a Jina AI Cloud auth token from [here](https://cloud.jina.ai/settings/tokens) and set it as an environment variable (`JINA_AUTH_TOKEN`)"
+msgstr ""
+
+#: ../docs/ecosystem/jina.md:14
+msgid "There exists a Jina Embeddings wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/jina.md:18
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/models/text_embedding/examples/jina.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/llamacpp.md:1
+msgid "Llama.cpp"
+msgstr ""
+
+#: ../docs/ecosystem/llamacpp.md:3
+msgid "This page covers how to use [llama.cpp](https://github.com/ggerganov/llama.cpp) within LangChain. It is broken into two parts: installation and setup, and then references to specific Llama-cpp wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/llamacpp.md:7
+msgid "Install the Python package with `pip install llama-cpp-python`"
+msgstr ""
+
+#: ../docs/ecosystem/llamacpp.md:8
+msgid "Download one of the [supported models](https://github.com/ggerganov/llama.cpp#description) and convert them to the llama.cpp format per the [instructions](https://github.com/ggerganov/llama.cpp)"
+msgstr ""
+
+#: ../docs/ecosystem/llamacpp.md:14
+msgid "There exists a LlamaCpp LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/llamacpp.md:18
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/models/llms/integrations/llamacpp.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/llamacpp.md:22
+msgid "There exists a LlamaCpp Embeddings wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/llamacpp.md:26
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/models/text_embedding/examples/llamacpp.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/metal.md:1
+#: ../docs/ecosystem/metal.md:9
+msgid "Metal"
+msgstr ""
+
+#: ../docs/ecosystem/metal.md:3
+msgid "This page covers how to use [Metal](https://getmetal.io) within LangChain."
+msgstr ""
+
+#: ../docs/ecosystem/metal.md:5
+msgid "What is Metal?"
+msgstr ""
+
+#: ../docs/ecosystem/metal.md:7
+msgid "Metal is a  managed retrieval & memory platform built for production. Easily index your data into `Metal` and run semantic search and retrieval on it."
+msgstr ""
+
+#: ../docs/ecosystem/metal.md:9
+msgid "![Metal](../_static/MetalDash.png)"
+msgstr ""
+
+#: ../docs/ecosystem/metal.md:13
+msgid "Get started by [creating a Metal account](https://app.getmetal.io/signup)."
+msgstr ""
+
+#: ../docs/ecosystem/metal.md:15
+msgid "Then, you can easily take advantage of the `MetalRetriever` class to start retrieving your data for semantic search, prompting context, etc. This class takes a `Metal` instance and a dictionary of parameters to pass to the Metal API."
+msgstr ""
+
+#: ../docs/ecosystem/milvus.md:1
+msgid "Milvus"
+msgstr ""
+
+#: ../docs/ecosystem/milvus.md:3
+msgid "This page covers how to use the Milvus ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Milvus wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/milvus.md:7
+#: ../docs/ecosystem/zilliz.md:8
+msgid "Install the Python SDK with `pip install pymilvus`"
+msgstr ""
+
+#: ../docs/ecosystem/milvus.md:12
+msgid "There exists a wrapper around Milvus indexes, allowing you to use it as a vectorstore, whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/milvus.md:20
+msgid "For a more detailed walkthrough of the Miluvs wrapper, see [this notebook](../modules/indexes/vectorstores/examples/milvus.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/modal.md:1
+msgid "Modal"
+msgstr ""
+
+#: ../docs/ecosystem/modal.md:3
+msgid "This page covers how to use the Modal ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Modal wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/modal.md:7
+msgid "Install with `pip install modal-client`"
+msgstr ""
+
+#: ../docs/ecosystem/modal.md:8
+msgid "Run `modal token new`"
+msgstr ""
+
+#: ../docs/ecosystem/modal.md:10
+msgid "Define your Modal Functions and Webhooks"
+msgstr ""
+
+#: ../docs/ecosystem/modal.md:12
+msgid "You must include a prompt. There is a rigid response structure."
+msgstr ""
+
+#: ../docs/ecosystem/modal.md:23
+msgid "An example with GPT2:"
+msgstr ""
+
+#: ../docs/ecosystem/modal.md:63
+msgid "There exists an Modal LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:1
+msgid "MyScale"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:3
+msgid "This page covers how to use MyScale vector database within LangChain. It is broken into two parts: installation and setup, and then references to specific MyScale wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:6
+msgid "With MyScale, you can manage both structured and unstructured (vectorized) data, and perform joint queries and analytics on both types of data using SQL. Plus, MyScale's cloud-native OLAP architecture, built on top of ClickHouse, enables lightning-fast data processing even on massive datasets."
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:8
+msgid "Introduction"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:10
+msgid "[Overview to MyScale and High performance vector search](https://docs.myscale.com/en/overview/)"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:12
+msgid "You can now register on our SaaS and [start a cluster now!](https://docs.myscale.com/en/quickstart/)"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:14
+msgid "If you are also interested in how we managed to integrate SQL and vector, please refer to [this document](https://docs.myscale.com/en/vector-reference/) for further syntax reference."
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:16
+msgid "We also deliver with live demo on huggingface! Please checkout our [huggingface space](https://huggingface.co/myscale)! They search millions of vector within a blink!"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:19
+msgid "Install the Python SDK with `pip install clickhouse-connect`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:21
+msgid "Setting up envrionments"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:23
+msgid "There are two ways to set up parameters for myscale index."
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:25
+msgid "Environment Variables"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:27
+msgid "Before you run the app, please set the environment variable with `export`:  `export MYSCALE_URL='<your-endpoints-url>' MYSCALE_PORT=<your-endpoints-port> MYSCALE_USERNAME=<your-username> MYSCALE_PASSWORD=<your-password> ...`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:30
+msgid "You can easily find your account, password and other info on our SaaS. For details please refer to [this document](https://docs.myscale.com/en/cluster-management/)  Every attributes under `MyScaleSettings` can be set with prefix `MYSCALE_` and is case insensitive."
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:33
+msgid "Create `MyScaleSettings` object with parameters"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:44
+msgid "supported functions:"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:45
+msgid "`add_texts`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:46
+msgid "`add_documents`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:47
+msgid "`from_texts`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:48
+msgid "`from_documents`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:49
+msgid "`similarity_search`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:50
+msgid "`asimilarity_search`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:51
+msgid "`similarity_search_by_vector`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:52
+msgid "`asimilarity_search_by_vector`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:53
+msgid "`similarity_search_with_relevance_scores`"
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:57
+msgid "There exists a wrapper around MyScale database, allowing you to use it as a vectorstore, whether for semantic search or similar example retrieval."
+msgstr ""
+
+#: ../docs/ecosystem/myscale.md:65
+msgid "For a more detailed walkthrough of the MyScale wrapper, see [this notebook](../modules/indexes/vectorstores/examples/myscale.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/nlpcloud.md:1
+msgid "NLPCloud"
+msgstr ""
+
+#: ../docs/ecosystem/nlpcloud.md:3
+msgid "This page covers how to use the NLPCloud ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific NLPCloud wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/nlpcloud.md:7
+msgid "Install the Python SDK with `pip install nlpcloud`"
+msgstr ""
+
+#: ../docs/ecosystem/nlpcloud.md:8
+msgid "Get an NLPCloud api key and set it as an environment variable (`NLPCLOUD_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/nlpcloud.md:14
+msgid "There exists an NLPCloud LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:1
+msgid "OpenAI"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:3
+msgid "This page covers how to use the OpenAI ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific OpenAI wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:8
+msgid "Get an OpenAI api key and set it as an environment variable (`OPENAI_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:9
+msgid "If you want to use OpenAI's tokenizer (only available for Python 3.9+), install it with `pip install tiktoken`"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:15
+msgid "There exists an OpenAI LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:20
+msgid "If you are using a model hosted on Azure, you should use different wrapper for that:"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:24
+msgid "For a more detailed walkthrough of the Azure wrapper, see [this notebook](../modules/models/llms/integrations/azure_openai_example.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:30
+msgid "There exists an OpenAI Embeddings wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:34
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/models/text_embedding/examples/openai.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:39
+msgid "There are several places you can use the `tiktoken` tokenizer. By default, it is used to count tokens for OpenAI LLMs."
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:47
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/indexes/text_splitters/examples/tiktoken.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:49
+msgid "Moderation"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:50
+msgid "You can also access the OpenAI content moderation endpoint with"
+msgstr ""
+
+#: ../docs/ecosystem/openai.md:55
+msgid "For a more detailed walkthrough of this, see [this notebook](../modules/chains/examples/moderation.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/opensearch.md:1
+msgid "OpenSearch"
+msgstr ""
+
+#: ../docs/ecosystem/opensearch.md:3
+msgid "This page covers how to use the OpenSearch ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific OpenSearch wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/opensearch.md:7
+msgid "Install the Python package with `pip install opensearch-py`"
+msgstr ""
+
+#: ../docs/ecosystem/opensearch.md:12
+msgid "There exists a wrapper around OpenSearch vector databases, allowing you to use it as a vectorstore  for semantic search using approximate vector search powered by lucene, nmslib and faiss engines  or using painless scripting and script scoring functions for bruteforce vector search."
+msgstr ""
+
+#: ../docs/ecosystem/opensearch.md:21
+msgid "For a more detailed walkthrough of the OpenSearch wrapper, see [this notebook](../modules/indexes/vectorstores/examples/opensearch.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/petals.md:1
+msgid "Petals"
+msgstr ""
+
+#: ../docs/ecosystem/petals.md:3
+msgid "This page covers how to use the Petals ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Petals wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/petals.md:7
+msgid "Install with `pip install petals`"
+msgstr ""
+
+#: ../docs/ecosystem/petals.md:8
+msgid "Get a Hugging Face api key and set it as an environment variable (`HUGGINGFACE_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/petals.md:14
+msgid "There exists an Petals LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/pgvector.md:1
+msgid "PGVector"
+msgstr ""
+
+#: ../docs/ecosystem/pgvector.md:3
+msgid "This page covers how to use the Postgres [PGVector](https://github.com/pgvector/pgvector) ecosystem within LangChain It is broken into two parts: installation and setup, and then references to specific PGVector wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/pgvector.md:6
+msgid "Installation"
+msgstr ""
+
+#: ../docs/ecosystem/pgvector.md:7
+msgid "Install the Python package with `pip install pgvector`"
+msgstr ""
+
+#: ../docs/ecosystem/pgvector.md:11
+msgid "The first step is to create a database with the `pgvector` extension installed."
+msgstr ""
+
+#: ../docs/ecosystem/pgvector.md:13
+msgid "Follow the steps at [PGVector Installation Steps](https://github.com/pgvector/pgvector#installation) to install the database and the extension. The docker image is the easiest way to get started."
+msgstr ""
+
+#: ../docs/ecosystem/pgvector.md:19
+msgid "There exists a wrapper around Postgres vector databases, allowing you to use it as a vectorstore, whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/pgvector.md:29
+msgid "For a more detailed walkthrough of the PGVector Wrapper, see [this notebook](../modules/indexes/vectorstores/examples/pgvector.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/pinecone.md:1
+msgid "Pinecone"
+msgstr ""
+
+#: ../docs/ecosystem/pinecone.md:3
+msgid "This page covers how to use the Pinecone ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Pinecone wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/pinecone.md:7
+msgid "Install the Python SDK with `pip install pinecone-client`"
+msgstr ""
+
+#: ../docs/ecosystem/pinecone.md:12
+msgid "There exists a wrapper around Pinecone indexes, allowing you to use it as a vectorstore, whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/pinecone.md:20
+msgid "For a more detailed walkthrough of the Pinecone wrapper, see [this notebook](../modules/indexes/vectorstores/examples/pinecone.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:1
+msgid "Prediction Guard"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:3
+msgid "This page covers how to use the Prediction Guard ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Prediction Guard wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:7
+msgid "Install the Python SDK with `pip install predictionguard`"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:8
+msgid "Get an Prediction Guard access token (as described [here](https://docs.predictionguard.com/)) and set it as an environment variable (`PREDICTIONGUARD_TOKEN`)"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:10
+msgid "LLM Wrapper"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:12
+msgid "There exists a Prediction Guard LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:17
+msgid "You can provide the name of your Prediction Guard \"proxy\" as an argument when initializing the LLM:"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:22
+msgid "Alternatively, you can use Prediction Guard's default proxy for SOTA LLMs:"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:27
+msgid "You can also provide your access token directly as an argument:"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:32
+msgid "Example usage"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:34
+msgid "Basic usage of the LLM wrapper:"
+msgstr ""
+
+#: ../docs/ecosystem/predictionguard.md:42
+msgid "Basic LLM Chaining with the Prediction Guard wrapper:"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:1
+msgid "PromptLayer"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:3
+msgid "This page covers how to use [PromptLayer](https://www.promptlayer.com) within LangChain. It is broken into two parts: installation and setup, and then references to specific PromptLayer wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:8
+msgid "If you want to work with PromptLayer:"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:9
+msgid "Install the promptlayer python library `pip install promptlayer`"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:10
+msgid "Create a PromptLayer account"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:11
+msgid "Create an api token and set it as an environment variable (`PROMPTLAYER_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:17
+msgid "There exists an PromptLayer OpenAI LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:22
+msgid "To tag your requests, use the argument `pl_tags` when instanializing the LLM"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:28
+msgid "To get the PromptLayer request id, use the argument `return_pl_id` when instanializing the LLM"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:33
+msgid "This will add the PromptLayer request ID in the `generation_info` field of the `Generation` returned when using `.generate` or `.agenerate`"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:35
+msgid "For example:"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:41
+msgid "You can use the PromptLayer request ID to add a prompt, score, or other metadata to your request. [Read more about it here](https://magniv.notion.site/Track-4deee1b1f7a34c1680d085f82567dab9)."
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:43
+msgid "This LLM is identical to the [OpenAI LLM](./openai.md), except that"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:44
+msgid "all your requests will be logged to your PromptLayer account"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:45
+msgid "you can add `pl_tags` when instantializing to tag your requests on PromptLayer"
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:46
+msgid "you can add `return_pl_id` when instantializing to return a PromptLayer request id to use [while tracking requests](https://magniv.notion.site/Track-4deee1b1f7a34c1680d085f82567dab9)."
+msgstr ""
+
+#: ../docs/ecosystem/promptlayer.md:49
+msgid "PromptLayer also provides native wrappers for [`PromptLayerChatOpenAI`](../modules/models/chat/integrations/promptlayer_chatopenai.ipynb) and `PromptLayerOpenAIChat`"
+msgstr ""
+
+#: ../docs/ecosystem/qdrant.md:1
+msgid "Qdrant"
+msgstr ""
+
+#: ../docs/ecosystem/qdrant.md:3
+msgid "This page covers how to use the Qdrant ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Qdrant wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/qdrant.md:7
+msgid "Install the Python SDK with `pip install qdrant-client`"
+msgstr ""
+
+#: ../docs/ecosystem/qdrant.md:12
+msgid "There exists a wrapper around Qdrant indexes, allowing you to use it as a vectorstore, whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/qdrant.md:20
+msgid "For a more detailed walkthrough of the Qdrant wrapper, see [this notebook](../modules/indexes/vectorstores/examples/qdrant.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:1
+msgid "Replicate"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:2
+msgid "This page covers how to run models on Replicate within LangChain."
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:5
+msgid "Create a [Replicate](https://replicate.com) account. Get your API key and set it as an environment variable (`REPLICATE_API_TOKEN`)"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:6
+msgid "Install the [Replicate python client](https://github.com/replicate/replicate-python) with `pip install replicate`"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:8
+msgid "Calling a model"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:10
+msgid "Find a model on the [Replicate explore page](https://replicate.com/explore), and then paste in the model name and version in this format: `owner-name/model-name:version`"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:12
+msgid "For example, for this [dolly model](https://replicate.com/replicate/dolly-v2-12b), click on the API tab. The model name/version would be: `\"replicate/dolly-v2-12b:ef0e1aefc61f8e096ebe4db6b2bacc297daf2ef6899f0f7e001ec445893500e5\"`"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:14
+msgid "Only the `model` param is required, but any other model parameters can also be passed in with the format `input={model_param: value, ...}`"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:17
+msgid "For example, if we were running stable diffusion and wanted to change the image dimensions:"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:23
+msgid "*Note that only the first output of a model will be returned.* From here, we can initialize our model:"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:30
+msgid "And run it:"
+msgstr ""
+
+#: ../docs/ecosystem/replicate.md:40
+msgid "We can call any Replicate model (not just LLMs) using this syntax. For example, we can call [Stable Diffusion](https://replicate.com/stability-ai/stable-diffusion):"
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:1
+msgid "Runhouse"
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:3
+msgid "This page covers how to use the [Runhouse](https://github.com/run-house/runhouse) ecosystem within LangChain. It is broken into three parts: installation and setup, LLMs, and Embeddings."
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:7
+msgid "Install the Python SDK with `pip install runhouse`"
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:8
+msgid "If you'd like to use on-demand cluster, check your cloud credentials with `sky check`"
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:10
+msgid "Self-hosted LLMs"
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:11
+msgid "For a basic self-hosted LLM, you can use the `SelfHostedHuggingFaceLLM` class. For more custom LLMs, you can use the `SelfHostedPipeline` parent class."
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:18
+msgid "For a more detailed walkthrough of the Self-hosted LLMs, see [this notebook](../modules/models/llms/integrations/runhouse.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:20
+msgid "Self-hosted Embeddings"
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:21
+msgid "There are several ways to use self-hosted embeddings with LangChain via Runhouse."
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:23
+msgid "For a basic self-hosted embedding from a Hugging Face Transformers model, you can use  the `SelfHostedEmbedding` class."
+msgstr ""
+
+#: ../docs/ecosystem/runhouse.md:29
+msgid "For a more detailed walkthrough of the Self-hosted Embeddings, see [this notebook](../modules/models/text_embedding/examples/self-hosted.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:1
+msgid "RWKV-4"
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:3
+msgid "This page covers how to use the `RWKV-4` wrapper within LangChain. It is broken into two parts: installation and setup, and then usage with an example."
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:7
+msgid "Install the Python package with `pip install rwkv`"
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:8
+msgid "Install the tokenizer Python package with `pip install tokenizer`"
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:9
+msgid "Download a [RWKV model](https://huggingface.co/BlinkDL/rwkv-4-raven/tree/main) and place it in your desired directory"
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:10
+msgid "Download the [tokens file](https://raw.githubusercontent.com/BlinkDL/ChatRWKV/main/20B_tokenizer.json)"
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:14
+msgid "RWKV"
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:16
+msgid "To use the RWKV wrapper, you need to provide the path to the pre-trained model file and the tokenizer's configuration."
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:51
+msgid "You can find links to model file downloads at the [RWKV-4-Raven](https://huggingface.co/BlinkDL/rwkv-4-raven/tree/main) repository."
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:53
+msgid "Rwkv-4 models -> recommended VRAM"
+msgstr ""
+
+#: ../docs/ecosystem/rwkv.md:65
+msgid "See the [rwkv pip](https://pypi.org/project/rwkv/) page for more information about strategies, including streaming and cuda support."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:1
+msgid "SearxNG Search API"
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:3
+msgid "This page covers how to use the SearxNG search API within LangChain. It is broken into two parts: installation and setup, and then references to the specific SearxNG API wrapper."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:8
+msgid "While it is possible to utilize the wrapper in conjunction with  [public searx instances](https://searx.space/) these instances frequently do not permit API access (see note on output format below) and have limitations on the frequency of requests. It is recommended to opt for a self-hosted instance instead."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:13
+msgid "Self Hosted Instance:"
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:15
+msgid "See [this page](https://searxng.github.io/searxng/admin/installation.html) for installation instructions."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:17
+msgid "When you install SearxNG, the only active output format by default is the HTML format. You need to activate the `json` format to use the API. This can be done by adding the following line to the `settings.yml` file:"
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:25
+msgid "You can make sure that the API is working by issuing a curl request to the API endpoint:"
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:27
+msgid "`curl -kLX GET --data-urlencode q='langchain' -d format=json http://localhost:8888`"
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:29
+msgid "This should return a JSON object with the results."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:36
+msgid "To use the wrapper we need to pass the host of the SearxNG instance to the wrapper with:     1. the named parameter `searx_host` when creating the instance.     2. exporting the environment variable `SEARXNG_HOST`."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:40
+msgid "You can use the wrapper to get results from a SearxNG instance."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:50
+msgid "You can also load this wrapper as a Tool (to use with an Agent)."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:52
+msgid "You can do this with:"
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:61
+msgid "Note that we could _optionally_ pass custom engines to use."
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:63
+msgid "If you want to obtain results with metadata as *json* you can use:"
+msgstr ""
+
+#: ../docs/ecosystem/searx.md:70
+msgid "For more information on tools, see [this page](../modules/agents/tools/getting_started.md)"
+msgstr ""
+
+#: ../docs/ecosystem/serpapi.md:1
+msgid "SerpAPI"
+msgstr ""
+
+#: ../docs/ecosystem/serpapi.md:3
+msgid "This page covers how to use the SerpAPI search APIs within LangChain. It is broken into two parts: installation and setup, and then references to the specific SerpAPI wrapper."
+msgstr ""
+
+#: ../docs/ecosystem/serpapi.md:7
+msgid "Install requirements with `pip install google-search-results`"
+msgstr ""
+
+#: ../docs/ecosystem/serpapi.md:8
+msgid "Get a SerpAPI api key and either set it as an environment variable (`SERPAPI_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/serpapi.md:14
+msgid "There exists a SerpAPI utility which wraps this API. To import this utility:"
+msgstr ""
+
+#: ../docs/ecosystem/serpapi.md:20
+msgid "For a more detailed walkthrough of this wrapper, see [this notebook](../modules/agents/tools/examples/serpapi.ipynb)."
+msgstr ""
+
+#: ../docs/ecosystem/stochasticai.md:1
+msgid "StochasticAI"
+msgstr ""
+
+#: ../docs/ecosystem/stochasticai.md:3
+msgid "This page covers how to use the StochasticAI ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific StochasticAI wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/stochasticai.md:7
+msgid "Install with `pip install stochasticx`"
+msgstr ""
+
+#: ../docs/ecosystem/stochasticai.md:8
+msgid "Get an StochasticAI api key and set it as an environment variable (`STOCHASTICAI_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/stochasticai.md:14
+msgid "There exists an StochasticAI LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:1
+msgid "Unstructured"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:3
+msgid "This page covers how to use the [`unstructured`](https://github.com/Unstructured-IO/unstructured) ecosystem within LangChain. The `unstructured` package from [Unstructured.IO](https://www.unstructured.io/) extracts clean text from raw source documents like PDFs and Word documents."
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:9
+msgid "This page is broken into two parts: installation and setup, and then references to specific `unstructured` wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:13
+msgid "Install the Python SDK with `pip install \"unstructured[local-inference]\"`"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:14
+msgid "Install the following system dependencies if they are not already available on your system. Depending on what document types you're parsing, you may not need all of these."
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:16
+msgid "`libmagic-dev` (filetype detection)"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:17
+msgid "`poppler-utils` (images and PDFs)"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:18
+msgid "`tesseract-ocr`(images and PDFs)"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:19
+msgid "`libreoffice` (MS Office docs)"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:20
+msgid "`pandoc` (EPUBs)"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:21
+msgid "If you are parsing PDFs using the `\"hi_res\"` strategy, run the following to install the `detectron2` model, which `unstructured` uses for layout detection:"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:23
+msgid "`pip install \"detectron2@git+https://github.com/facebookresearch/detectron2.git@e2ce8dc#egg=detectron2\"`"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:24
+msgid "If `detectron2` is not installed, `unstructured` will fallback to processing PDFs using the `\"fast\"` strategy, which uses `pdfminer` directly and doesn't require `detectron2`."
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:30
+msgid "Data Loaders"
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:32
+msgid "The primary `unstructured` wrappers within `langchain` are data loaders. The following shows how to use the most basic unstructured data loader. There are other file-specific data loaders available in the `langchain.document_loaders` module."
+msgstr ""
+
+#: ../docs/ecosystem/unstructured.md:43
+msgid "If you instantiate the loader with `UnstructuredFileLoader(mode=\"elements\")`, the loader will track additional metadata like the page number and text type (i.e. title, narrative text) when that information is available."
+msgstr ""
+
+#: ../docs/ecosystem/wandb_tracking.ipynb:10002
+msgid "Weights & Biases"
+msgstr ""
+
+#: ../docs/ecosystem/wandb_tracking.ipynb:10004
+msgid "This notebook goes over how to track your LangChain experiments into one centralized Weights and Biases dashboard. To learn more about prompt engineering and the callback please refer to this Report which explains both alongside the resultant dashboards you can expect to see."
+msgstr ""
+
+#: ../docs/ecosystem/wandb_tracking.ipynb:10006
+msgid "Run in Colab: https://colab.research.google.com/drive/1DXH4beT4HFaRKy_Vm4PoxhXVDRf7Ym8L?usp=sharing"
+msgstr ""
+
+#: ../docs/ecosystem/wandb_tracking.ipynb:10008
+msgid "View Report: https://wandb.ai/a-sh0ts/langchain_callback_demo/reports/Prompt-Engineering-LLMs-with-LangChain-and-W-B--VmlldzozNjk1NTUw#👋-how-to-build-a-callback-in-langchain-for-better-prompt-engineering"
+msgstr ""
+
+#: ../docs/ecosystem/wandb_tracking.ipynb:70002
+msgid "NOTE: For beta workflows we have made the default analysis based on textstat and the visualizations based on spacy"
+msgstr ""
+
+#: ../docs/ecosystem/wandb_tracking.ipynb:100002
+msgid "The `flush_tracker` function is used to log LangChain sessions to Weights & Biases. It takes in the LangChain module or agent, and logs at minimum the prompts and generations alongside the serialized form of the LangChain module to the specified Weights & Biases project. By default we reset the session as opposed to concluding the session outright."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:1
+msgid "Weaviate"
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:3
+msgid "This page covers how to use the Weaviate ecosystem within LangChain."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:5
+msgid "What is Weaviate?"
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:7
+msgid "**Weaviate in a nutshell:**"
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:8
+msgid "Weaviate is an open-source ​database of the type ​vector search engine."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:9
+msgid "Weaviate allows you to store JSON documents in a class property-like fashion while attaching machine learning vectors to these documents to represent them in vector space."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:10
+msgid "Weaviate can be used stand-alone (aka bring your vectors) or with a variety of modules that can do the vectorization for you and extend the core capabilities."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:11
+msgid "Weaviate has a GraphQL-API to access your data easily."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:12
+msgid "We aim to bring your vector search set up to production to query in mere milliseconds (check our [open source benchmarks](https://weaviate.io/developers/weaviate/current/benchmarks/) to see if Weaviate fits your use case)."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:13
+msgid "Get to know Weaviate in the [basics getting started guide](https://weaviate.io/developers/weaviate/current/core-knowledge/basics.html) in under five minutes."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:15
+msgid "**Weaviate in detail:**"
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:17
+msgid "Weaviate is a low-latency vector search engine with out-of-the-box support for different media types (text, images, etc.). It offers Semantic Search, Question-Answer Extraction, Classification, Customizable Models (PyTorch/TensorFlow/Keras), etc. Built from scratch in Go, Weaviate stores both objects and vectors, allowing for combining vector search with structured filtering and the fault tolerance of a cloud-native database. It is all accessible through GraphQL, REST, and various client-side programming languages."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:20
+msgid "Install the Python SDK with `pip install weaviate-client`"
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:25
+msgid "There exists a wrapper around Weaviate indexes, allowing you to use it as a vectorstore, whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/weaviate.md:33
+msgid "For a more detailed walkthrough of the Weaviate wrapper, see [this notebook](../modules/indexes/vectorstores/examples/weaviate.ipynb)"
+msgstr ""
+
+#: ../docs/ecosystem/wolfram_alpha.md:1
+msgid "Wolfram Alpha Wrapper"
+msgstr ""
+
+#: ../docs/ecosystem/wolfram_alpha.md:3
+msgid "This page covers how to use the Wolfram Alpha API within LangChain. It is broken into two parts: installation and setup, and then references to specific Wolfram Alpha wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/wolfram_alpha.md:7
+msgid "Install requirements with `pip install wolframalpha`"
+msgstr ""
+
+#: ../docs/ecosystem/wolfram_alpha.md:8
+msgid "Go to wolfram alpha and sign up for a developer account [here](https://developer.wolframalpha.com/)"
+msgstr ""
+
+#: ../docs/ecosystem/wolfram_alpha.md:9
+msgid "Create an app and get your APP ID"
+msgstr ""
+
+#: ../docs/ecosystem/wolfram_alpha.md:10
+msgid "Set your APP ID as an environment variable `WOLFRAM_ALPHA_APPID`"
+msgstr ""
+
+#: ../docs/ecosystem/wolfram_alpha.md:17
+msgid "There exists a WolframAlphaAPIWrapper utility which wraps this API. To import this utility:"
+msgstr ""
+
+#: ../docs/ecosystem/wolfram_alpha.md:23
+msgid "For a more detailed walkthrough of this wrapper, see [this notebook](../modules/agents/tools/examples/wolfram_alpha.ipynb)."
+msgstr ""
+
+#: ../docs/ecosystem/writer.md:1
+msgid "Writer"
+msgstr ""
+
+#: ../docs/ecosystem/writer.md:3
+msgid "This page covers how to use the Writer ecosystem within LangChain. It is broken into two parts: installation and setup, and then references to specific Writer wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/writer.md:7
+msgid "Get an Writer api key and set it as an environment variable (`WRITER_API_KEY`)"
+msgstr ""
+
+#: ../docs/ecosystem/writer.md:13
+msgid "There exists an Writer LLM wrapper, which you can access with"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:1
+msgid "Yeager.ai"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:3
+msgid "This page covers how to use [Yeager.ai](https://yeager.ai) to generate LangChain tools and agents."
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:5
+msgid "What is Yeager.ai?"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:6
+msgid "Yeager.ai is an ecosystem designed to simplify the process of creating AI agents and tools."
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:8
+msgid "It features yAgents, a No-code LangChain Agent Builder, which enables users to build, test, and deploy AI solutions with ease. Leveraging the LangChain framework, yAgents allows seamless integration with various language models and resources, making it suitable for developers, researchers, and AI enthusiasts across diverse applications."
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:10
+msgid "yAgents"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:11
+msgid "Low code generative agent designed to help you build, prototype, and deploy Langchain tools with ease."
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:13
+msgid "How to use?"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:18
+msgid "Go to http://127.0.0.1:7860"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:20
+msgid "This will install the necessary dependencies and set up yAgents on your system. After the first run, yAgents will create a .env file where you can input your OpenAI API key. You can do the same directly from the Gradio interface under the tab \"Settings\"."
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:22
+msgid "`OPENAI_API_KEY=<your_openai_api_key_here>`"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:24
+msgid "We recommend using GPT-4,. However, the tool can also work with GPT-3 if the problem is broken down sufficiently."
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:26
+msgid "Creating and Executing Tools with yAgents"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:27
+msgid "yAgents makes it easy to create and execute AI-powered tools. Here's a brief overview of the process:"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:28
+msgid "Create a tool: To create a tool, provide a natural language prompt to yAgents. The prompt should clearly describe the tool's purpose and functionality. For example: `create a tool that returns the n-th prime number`"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:31
+msgid "Load the tool into the toolkit: To load a tool into yAgents, simply provide a command to yAgents that says so. For example: `load the tool that you just created it into your toolkit`"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:34
+msgid "Execute the tool: To run a tool or agent, simply provide a command to yAgents that includes the name of the tool and any required parameters. For example: `generate the 50th prime number`"
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:37
+msgid "You can see a video of how it works [here](https://www.youtube.com/watch?v=KA5hCM3RaWE)."
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:39
+msgid "As you become more familiar with yAgents, you can create more advanced tools and agents to automate your work and enhance your productivity."
+msgstr ""
+
+#: ../docs/ecosystem/yeagerai.md:41
+msgid "For more information, see [yAgents' Github](https://github.com/yeagerai/yeagerai-agent) or our [docs](https://yeagerai.gitbook.io/docs/general/welcome-to-yeager.ai)"
+msgstr ""
+
+#: ../docs/ecosystem/zilliz.md:1
+msgid "Zilliz"
+msgstr ""
+
+#: ../docs/ecosystem/zilliz.md:3
+msgid "This page covers how to use the Zilliz Cloud ecosystem within LangChain. Zilliz uses the Milvus integration.  It is broken into two parts: installation and setup, and then references to specific Milvus wrappers."
+msgstr ""
+
+#: ../docs/ecosystem/zilliz.md:13
+msgid "There exists a wrapper around Zilliz indexes, allowing you to use it as a vectorstore, whether for semantic search or example selection."
+msgstr ""
+
+#: ../docs/ecosystem/zilliz.md:21
+msgid "For a more detailed walkthrough of the Miluvs wrapper, see [this notebook](../modules/indexes/vectorstores/examples/zilliz.ipynb)"
+msgstr ""

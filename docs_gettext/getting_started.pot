@@ -1,0 +1,290 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Harrison Chase
+# This file is distributed under the same license as the 🦜🔗 LangChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 🦜🔗 LangChain 0.0.150\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 12:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/getting_started/getting_started.md:1
+msgid "Quickstart Guide"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:4
+msgid "This tutorial gives you a quick walkthrough about building an end-to-end language model application with LangChain."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:6
+msgid "Installation"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:8
+msgid "To get started, install LangChain with the following command:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:17
+msgid "Environment Setup"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:19
+msgid "Using LangChain will usually require integrations with one or more model providers, data stores, apis, etc."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:21
+msgid "For this example, we will be using OpenAI's APIs, so we will first need to install their SDK:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:27
+msgid "We will then need to set the environment variable in the terminal."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:33
+msgid "Alternatively, you could do this from inside the Jupyter notebook (or Python script):"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:41
+msgid "Building a Language Model Application: LLMs"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:43
+msgid "Now that we have installed LangChain and set up our environment, we can start building our language model application."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:45
+msgid "LangChain provides many modules that can be used to build language model applications. Modules can be combined to create more complex applications, or be used individually for simple applications."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:49
+msgid "LLMs: Get predictions from a language model"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:51
+msgid "The most basic building block of LangChain is calling an LLM on some input. Let's walk through a simple example of how to do this.  For this purpose, let's pretend we are building a service that generates a company name based on what the company makes."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:55
+msgid "In order to do this, we first need to import the LLM wrapper."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:61
+msgid "We can then initialize the wrapper with any arguments. In this example, we probably want the outputs to be MORE random, so we'll initialize it with a HIGH temperature."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:68
+msgid "We can now call it on some input!"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:79
+msgid "For more details on how to use LLMs within LangChain, see the [LLM getting started guide](../modules/models/llms/getting_started.ipynb)."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:82
+msgid "Prompt Templates: Manage prompts for LLMs"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:84
+msgid "Calling an LLM is a great first step, but it's just the beginning. Normally when you use an LLM in an application, you are not sending user input directly to the LLM. Instead, you are probably taking user input and constructing a prompt, and then sending that to the LLM."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:88
+msgid "For example, in the previous example, the text we passed in was hardcoded to ask for a name for a company that made colorful socks. In this imaginary service, what we would want to do is take only the user input describing what the company does, and then format the prompt with that information."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:91
+msgid "This is easy to do with LangChain!"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:93
+msgid "First lets define the prompt template:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:104
+msgid "Let's now see how this works! We can call the `.format` method to format it."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:115
+msgid "[For more details, check out the getting started guide for prompts.](../modules/prompts/chat_prompt_template.ipynb)"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:120
+msgid "Chains: Combine LLMs and prompts in multi-step workflows"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:122
+msgid "Up until now, we've worked with the PromptTemplate and LLM primitives by themselves. But of course, a real application is not just one primitive, but rather a combination of them."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:124
+msgid "A chain in LangChain is made up of links, which can be either primitives like LLMs or other chains."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:126
+msgid "The most core type of chain is an LLMChain, which consists of a PromptTemplate and an LLM."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:128
+msgid "Extending the previous example, we can construct an LLMChain which takes user input, formats it with a PromptTemplate, and then passes the formatted response to an LLM."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:141
+msgid "We can now create a very simple chain that will take user input, format the prompt with it, and then send it to the LLM:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:148
+msgid "Now we can run that chain only specifying the product!"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:155
+msgid "There we go! There's the first chain - an LLM Chain. This is one of the simpler types of chains, but understanding how it works will set you up well for working with more complex chains."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:158
+msgid "[For more details, check out the getting started guide for chains.](../modules/chains/getting_started.ipynb)"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:160
+msgid "Agents: Dynamically Call Chains Based on User Input"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:162
+msgid "So far the chains we've looked at run in a predetermined order."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:164
+msgid "Agents no longer do: they use an LLM to determine which actions to take and in what order. An action can either be using a tool and observing its output, or returning to the user."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:166
+msgid "When used correctly agents can be extremely powerful. In this tutorial, we show you how to easily use agents through the simplest, highest level API."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:169
+msgid "In order to load agents, you should understand the following concepts:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:171
+msgid "Tool: A function that performs a specific duty. This can be things like: Google Search, Database lookup, Python REPL, other chains. The interface for a tool is currently a function that is expected to have a string as an input, with a string as an output."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:172
+msgid "LLM: The language model powering the agent."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:173
+msgid "Agent: The agent to use. This should be a string that references a support agent class. Because this notebook focuses on the simplest, highest level API, this only covers using the standard supported agents. If you want to implement a custom agent, see the documentation for custom agents (coming soon)."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:175
+msgid "**Agents**: For a list of supported agents and their specifications, see [here](../modules/agents/agents.md)."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:177
+msgid "**Tools**: For a list of predefined tools and their specifications, see [here](../modules/agents/tools.md)."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:179
+msgid "For this example, you will also need to install the SerpAPI Python package."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:185
+msgid "And set the appropriate environment variables."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:192
+msgid "Now we can get started!"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:233
+#: ../docs/getting_started/getting_started.md:460
+msgid "Memory: Add State to Chains and Agents"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:235
+msgid "So far, all the chains and agents we've gone through have been stateless. But often, you may want a chain or agent to have some concept of \"memory\" so that it may remember information about its previous interactions. The clearest and simple example of this is when designing a chatbot - you want it to remember previous messages so it can use context from that to have a better conversation. This would be a type of \"short-term memory\". On the more complex side, you could imagine a chain/agent remembering key pieces of information over time - this would be a form of \"long-term memory\". For more concrete ideas on the latter, see this [awesome paper](https://memprompt.com/)."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:237
+msgid "LangChain provides several specially created chains just for this purpose. This notebook walks through using one of those chains (the `ConversationChain`) with two different types of memory."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:239
+msgid "By default, the `ConversationChain` has a simple type of memory that remembers all previous inputs/outputs and adds them to the context that is passed. Let's take a look at using this chain (setting `verbose=True` so we can see the prompt)."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:286
+msgid "Building a Language Model Application: Chat Models"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:288
+msgid "Similarly, you can use chat models instead of LLMs. Chat models are a variation on language models. While chat models use language models under the hood, the interface they expose is a bit different: rather than expose a \"text in, text out\" API, they expose an interface where \"chat messages\" are the inputs and outputs."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:290
+msgid "Chat model APIs are fairly new, so we are still figuring out the correct abstractions."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:292
+msgid "Get Message Completions from a Chat Model"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:294
+msgid "You can get chat completions by passing one or more messages to the chat model. The response will be a message. The types of messages currently supported in LangChain are `AIMessage`, `HumanMessage`, `SystemMessage`, and `ChatMessage` -- `ChatMessage` takes in an arbitrary role parameter. Most of the time, you'll just be dealing with `HumanMessage`, `AIMessage`, and `SystemMessage`."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:307
+msgid "You can get completions by passing in a single message."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:314
+msgid "You can also pass in multiple messages for OpenAI's gpt-3.5-turbo and gpt-4 models."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:325
+msgid "You can go one step further and generate completions for multiple sets of messages using `generate`. This returns an `LLMResult` with an additional `message` parameter:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:342
+msgid "You can recover things like token usage from this LLMResult:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:349
+msgid "Chat Prompt Templates"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:350
+msgid "Similar to LLMs, you can make use of templating by using a `MessagePromptTemplate`. You can build a `ChatPromptTemplate` from one or more `MessagePromptTemplate`s. You can use `ChatPromptTemplate`'s `format_prompt` -- this returns a `PromptValue`, which you can convert to a string or `Message` object, depending on whether you want to use the formatted value as input to an llm or chat model."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:352
+msgid "For convience, there is a `from_template` method exposed on the template. If you were to use this template, this is what it would look like:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:376
+msgid "Chains with Chat Models"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:377
+msgid "The `LLMChain` discussed in the above section can be used with chat models as well:"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:401
+msgid "Agents with Chat Models"
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:402
+msgid "Agents can also be used with chat models, you can initialize one using `AgentType.CHAT_ZERO_SHOT_REACT_DESCRIPTION` as the agent type."
+msgstr ""
+
+#: ../docs/getting_started/getting_started.md:461
+msgid "You can use Memory with chains and agents initialized with chat models. The main difference between this and Memory for LLMs is that rather than trying to condense all previous messages into a string, we can keep them as their own unique memory object."
+msgstr ""
