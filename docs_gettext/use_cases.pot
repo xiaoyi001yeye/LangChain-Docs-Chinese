@@ -1,0 +1,2798 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Harrison Chase
+# This file is distributed under the same license as the 🦜🔗 LangChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 🦜🔗 LangChain 0.0.150\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 12:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/use_cases/agent_simulations.md:1
+msgid "Agent Simulations"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:3
+msgid "Agent simulations involve interacting one of more agents with eachother. Agent simulations generally involve two main components:"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:6
+msgid "Long Term Memory"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:7
+msgid "Simulation Environment"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:9
+msgid "Specific implementations of agent simulations (or parts of agent simulations) include"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:11
+msgid "Simulations with Two Agents"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:12
+msgid "[CAMEL](agent_simulations/camel_role_playing.ipynb): an implementation of the CAMEL (Communicative Agents for “Mind” Exploration of Large Scale Language Model Society) paper, where two agents communicate with each other."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:13
+msgid "[Two Player D&D](agent_simulations/two_player_dnd.ipynb): an example of how to use a generic simulator for two agents to implement a variant of the popular Dungeons & Dragons role playing game."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:15
+msgid "Simulations with Multiple Agents"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:16
+msgid "[Multi-Player D&D](agent_simulations/multi_player_dnd.ipynb): an example of how to use a generic dialogue simulator for multiple dialogue agents with a custom speaker-ordering, illustrated with a variant of the popular Dungeons & Dragons role playing game."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:17
+msgid "[Decentralized Speaker Selection](agent_simulations/multiagent_bidding.ipynb): an example of how to implement a multi-agent dialogue without a fixed schedule for who speaks when. Instead the agents decide for themselves who speaks by outputting bids to speak. This example shows how to do this in the context of a fictitious presidential debate."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations.md:18
+msgid "[Generative Agents](agent_simulations/characters.ipynb): This notebook implements a generative agent based on the paper [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) by Park, et. al."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:10002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:10002
+msgid "CAMEL Role-Playing Autonomous Cooperative Agents"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:10004
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:10004
+msgid "This is a langchain implementation of paper: \"CAMEL: Communicative Agents for “Mind” Exploration of Large Scale Language Model Society\"."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:10006
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:10006
+msgid "Overview:"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:10008
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:10008
+msgid "The rapid advancement of conversational and chat-based language models has led to remarkable progress in complex task-solving. However, their success heavily relies on human input to guide the conversation, which can be challenging and time-consuming. This paper explores the potential of building scalable techniques to facilitate autonomous cooperation among communicative agents and provide insight into their \"cognitive\" processes. To address the challenges of achieving autonomous cooperation, we propose a novel communicative agent framework named role-playing. Our approach involves using inception prompting to guide chat agents toward task completion while maintaining consistency with human intentions. We showcase how role-playing can be used to generate conversational data for studying the behaviors and capabilities of chat agents, providing a valuable resource for investigating conversational language models. Our contributions include introducing a novel communicative agent framework, offering a scalable approach for studying the cooperative behaviors and capabilities of multi-agent systems, and open-sourcing our library to support research on communicative agents and beyond."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:10010
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:10010
+msgid "The original implementation: https://github.com/lightaime/camel"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:10012
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:10012
+msgid "Project website: https://www.camel-ai.org/"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:10014
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:10014
+msgid "Arxiv paper: https://arxiv.org/abs/2303.17760"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:20002
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:20002
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:20002
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:20002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:20002
+msgid "Import LangChain related modules"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:40002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:40002
+msgid "Define a CAMEL agent helper class"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:60002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:60002
+msgid "Setup OpenAI API key and roles and task for role-playing"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:80002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:80002
+msgid "Create a task specify agent for brainstorming and get the specified task"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:100002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:100002
+msgid "Create inception prompts for AI assistant and AI user for role-playing"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:120002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:120002
+msgid "Create a helper helper to get system messages for AI assistant and AI user from role names and the task"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:140002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:140002
+msgid "Create AI assistant agent and AI user agent from obtained system messages"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/camel_role_playing.ipynb:160002
+#: ../docs/use_cases/agents/camel_role_playing.ipynb:160002
+msgid "Start role-playing session to solve the task!"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:10002
+msgid "Generative Agents in LangChain"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:10004
+msgid "This notebook implements a generative agent based on the paper [Generative Agents: Interactive Simulacra of Human Behavior](https://arxiv.org/abs/2304.03442) by Park, et. al."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:10006
+msgid "In it, we leverage a time-weighted Memory object backed by a LangChain Retriever."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60002
+msgid "Generative Agent Memory Components"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60004
+msgid "This tutorial highlights the memory of generative agents and its impact on their behavior. The memory varies from standard LangChain Chat memory in two aspects:"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60006
+msgid "**Memory Formation**"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60008
+msgid "Generative Agents have extended memories, stored in a single stream:"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60009
+msgid "Observations - from dialogues or interactions with the virtual world, about self or others"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60010
+msgid "Reflections - resurfaced and summarized core memories"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60013
+msgid "**Memory Recall**"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60015
+msgid "Memories are retrieved using a weighted sum of salience, recency, and importance."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:60017
+msgid "You can review the definitions of the `GenerativeAgent` and `GenerativeAgentMemory` in the [reference documentation](\"../../reference/modules/experimental\") for the following imports, focusing on `add_memory` and `summarize_related_memories` methods."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80002
+msgid "Memory Lifecycle"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80004
+msgid "Summarizing the key methods in the above: `add_memory` and `summarize_related_memories`."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80006
+msgid "When an agent makes an observation, it stores the memory:"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80008
+msgid "Language model scores the memory's importance (1 for mundane, 10 for poignant)"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80009
+msgid "Observation and importance are stored within a document by TimeWeightedVectorStoreRetriever, with a `last_accessed_time`."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80011
+msgid "When an agent responds to an observation:"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80013
+msgid "Generates query(s) for retriever, which fetches documents based on salience, recency, and importance."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80014
+msgid "Summarizes the retrieved information"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:80015
+msgid "Updates the `last_accessed_time` for the used documents."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:90002
+msgid "Create a Generative Character"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:90006
+msgid "Now that we've walked through the definition, we will create two characters named \"Tommie\" and \"Eve\"."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:150002
+msgid "Pre-Interview with Character"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:150004
+msgid "Before sending our character on their way, let's ask them a few questions."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:200002
+msgid "Step through the day's observations."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:230002
+msgid "Interview after the day"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:270002
+msgid "Adding Multiple Characters"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:270004
+msgid "Let's add a second character to have a conversation with Tommie. Feel free to configure different traits."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:310002
+msgid "Pre-conversation interviews"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:310005
+msgid "Let's \"Interview\" Eve before she speaks with Tommie."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:360002
+msgid "Dialogue between Generative Agents"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:360004
+msgid "Generative agents are much more complex when they interact with a virtual environment or with each other. Below, we run a simple conversation between Tommie and Eve."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:390002
+msgid "Let's interview our agents after their conversation"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/characters.ipynb:390004
+msgid "Since the generative agents retain their memories from the day, we can ask them about their plans, conversations, and other memoreis."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:10002
+msgid "Multi-Player Dungeons & Dragons"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:10004
+msgid "This notebook shows how the `DialogueAgent` and `DialogueSimulator` class make it easy to extend the [Two-Player Dungeons & Dragons example](https://python.langchain.com/en/latest/use_cases/agent_simulations/two_player_dnd.html) to multiple players."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:10006
+msgid "The main difference between simulating two players and multiple players is in revising the schedule for when each agent speaks"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:10008
+msgid "To this end, we augment `DialogueSimulator` to take in a custom function that determines the schedule of which agent speaks. In the example below, each character speaks in round-robin fashion, with the storyteller interleaved between each player."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:40002
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:40002
+msgid "`DialogueAgent` class"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:40003
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:40003
+msgid "The `DialogueAgent` class is a simple wrapper around the `ChatOpenAI` model that stores the message history from the `dialogue_agent`'s point of view by simply concatenating the messages as strings."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:40005
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:40005
+msgid "It exposes two methods:"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:40006
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:40006
+msgid "`send()`: applies the chatmodel to the message history and returns the message string"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:40007
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:40007
+msgid "`receive(name, message)`: adds the `message` spoken by `name` to message history"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:60002
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:60002
+msgid "`DialogueSimulator` class"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:60003
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:60003
+msgid "The `DialogueSimulator` class takes a list of agents. At each step, it performs the following:"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:60004
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:60004
+msgid "Select the next speaker"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:60005
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:60005
+msgid "Calls the next speaker to send a message"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:60006
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:60006
+msgid "Broadcasts the message to all other agents"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:60007
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:60007
+msgid "Update the step counter. The selection of the next speaker can be implemented as any function, but in this case we simply loop through the agents."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:80002
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:80002
+msgid "Define roles and quest"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:100002
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:100002
+msgid "Ask an LLM to add detail to the game description"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:130002
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:150002
+msgid "Use an LLM to create an elaborate quest description"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multi_player_dnd.ipynb:150002
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:230002
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:170002
+msgid "Main Loop"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:10002
+msgid "Multi-agent decentralized speaker selection"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:10004
+msgid "This notebook showcases how to implement a multi-agent simulation without a fixed schedule for who speaks when. Instead the agents decide for themselves who speaks. We can implement this by having each agent bid to speak. Whichever agent's bid is the highest gets to speak."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:10006
+msgid "We will show how to do this in the example below that showcases a fictitious presidential debate."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:40002
+msgid "`DialogueAgent` and `DialogueSimulator` classes"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:40003
+msgid "We will use the same `DialogueAgent` and `DialogueSimulator` classes defined in [Multi-Player Dungeons & Dragons](https://python.langchain.com/en/latest/use_cases/agent_simulations/multi_player_dnd.html)."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:60002
+msgid "`BiddingDialogueAgent` class"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:60003
+msgid "We define a subclass of `DialogueAgent` that has a `bid()` method that produces a bid given the message history and the most recent message."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:80002
+msgid "Define participants and debate topic"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:100002
+msgid "Generate system messages"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:130002
+msgid "Output parser for bids"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:130003
+msgid "We ask the agents to output a bid to speak. But since the agents are LLMs that output strings, we need to"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:130004
+msgid "define a format they will produce their outputs in"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:130005
+msgid "parse their outputs"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:130007
+msgid "We can subclass the [RegexParser](https://github.com/hwchase17/langchain/blob/master/langchain/output_parsers/regex.py) to implement our own custom output parser for bids."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:150002
+msgid "Generate bidding system message"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:150003
+msgid "This is inspired by the prompt used in [Generative Agents](https://arxiv.org/pdf/2304.03442.pdf) for using an LLM to determine the importance of memories. This will use the formatting instructions from our `BidOutputParser`."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:180002
+msgid "Use an LLM to create an elaborate on debate topic"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:200002
+msgid "Define the speaker selection function"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:200003
+msgid "Lastly we will define a speaker selection function `select_next_speaker` that takes each agent's bid and selects the agent with the highest bid (with ties broken randomly)."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/multiagent_bidding.ipynb:200005
+msgid "We will define a `ask_for_bid` function that uses the `bid_parser` we defined before to parse the agent's bid. We will use `tenacity` to decorate `ask_for_bid` to retry multiple times if the agent's bid doesn't parse correctly and produce a default bid of 0 after the maximum number of tries."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:10002
+msgid "Two-Player Dungeons & Dragons"
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:10004
+msgid "In this notebook, we show how we can use concepts from [CAMEL](https://www.camel-ai.org/) to simulate a role-playing game with a protagonist and a dungeon master. To simulate this game, we create an `DialogueSimulator` class that coordinates the dialogue between the two agents."
+msgstr ""
+
+#: ../docs/use_cases/agent_simulations/two_player_dnd.ipynb:130002
+msgid "Protagonist and dungeon master system messages"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:10002
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:10002
+msgid "BabyAGI User Guide"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:10004
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:10004
+msgid "This notebook demonstrates how to implement [BabyAGI](https://github.com/yoheinakajima/babyagi/tree/main) by [Yohei Nakajima](https://twitter.com/yoheinakajima). BabyAGI is an AI agent that can generate and pretend to execute tasks based on a given objective."
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:10006
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:10006
+msgid "This guide will help you understand the components to create your own recursive agents."
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:10008
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:10008
+msgid "Although BabyAGI uses specific vectorstores/model providers (Pinecone, OpenAI), one of the benefits of implementing it with LangChain is that you can easily swap those out for different options. In this implementation we use a FAISS vectorstore (because it runs locally and is free)."
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:20002
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:20002
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:20002
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:20002
+msgid "Install and Import Required Modules"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:40002
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:40002
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:40002
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:40002
+msgid "Connect to the Vector Store"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:40004
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:40004
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:40004
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:40004
+msgid "Depending on what vectorstore you use, this step may look different."
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:70002
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:70002
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:70002
+msgid "Define the Chains"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:70004
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:70004
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:70004
+msgid "BabyAGI relies on three LLM chains:"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:70005
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:70005
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:70005
+msgid "Task creation chain to select new tasks to add to the list"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:70006
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:70006
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:70006
+msgid "Task prioritization chain to re-prioritize tasks"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:70007
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:70007
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:70007
+msgid "Execution Chain to execute the tasks"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:110002
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:110002
+msgid "Define the BabyAGI Controller"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:110004
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:110004
+msgid "BabyAGI composes the chains defined above in a (potentially-)infinite loop."
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:160002
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:160002
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:70002
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:100002
+msgid "Run the BabyAGI"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi.ipynb:160004
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:160004
+#: ../docs/use_cases/autonomous_agents/baby_agi.ipynb:70004
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:100004
+msgid "Now it's time to create the BabyAGI controller and watch it try to accomplish your objective."
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:10002
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:10002
+msgid "BabyAGI with Tools"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:10004
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:10004
+msgid "This notebook builds on top of [baby agi](baby_agi.ipynb), but shows how you can swap out the execution chain. The previous execution chain was just an LLM which made stuff up. By swapping it out with an agent that has access to tools, we can hopefully get real reliable information"
+msgstr ""
+
+#: ../docs/use_cases/agents/baby_agi_with_agent.ipynb:70010
+#: ../docs/use_cases/autonomous_agents/baby_agi_with_agent.ipynb:70010
+msgid "NOTE: in this notebook, the Execution chain will now be an agent."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:10002
+msgid "Custom Agent with PlugIn Retrieval"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:10004
+msgid "This notebook combines two concepts in order to build a custom agent that can interact with AI Plugins:"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:10006
+msgid "[Custom Agent with Retrieval](../../modules/agents/agents/custom_agent_with_plugin_retrieval.ipynb): This introduces the concept of retrieving many tools, which is useful when trying to work with arbitrarily many plugins."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:10007
+msgid "[Natural Language API Chains](../../modules/chains/examples/openapi.ipynb): This creates Natural Language wrappers around OpenAPI endpoints. This is useful because (1) plugins use OpenAPI endpoints under the hood, (2) wrapping them in an NLAChain allows the router agent to call it more easily."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:10009
+msgid "The novel idea introduced in this notebook is the idea of using retrieval to select not the tools explicitly, but the set of OpenAPI specs to use. We can then generate tools from those OpenAPI specs. The use case for this is when trying to get agents to use plugins. It may be more efficient to choose plugins first, then the endpoints, rather than the endpoints directly. This is because the plugins may contain more useful information for selection."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:20002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:20002
+msgid "Set up environment"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:20004
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:20004
+msgid "Do necessary imports, etc."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:40002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:60002
+msgid "Setup LLM"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:60002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:80002
+msgid "Set up plugins"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:60004
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:80004
+msgid "Load and index plugins"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:80002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:100002
+msgid "Tool Retriever"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:80004
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:100004
+msgid "We will use a vectorstore to create embeddings for each tool description. Then, for an incoming query we can create embeddings for that query and do a similarity search for relevant tools."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:120002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:140002
+msgid "We can now test this retriever to see if it seems to work."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:150002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:170002
+msgid "Prompt Template"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:150004
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:170004
+msgid "The prompt template is pretty standard, because we're not actually changing that much logic in the actual prompt template, but rather we are just changing how retrieval is done."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:170002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:190002
+msgid "The custom prompt template now has the concept of a tools_getter, which we call on the input to select the tools to use"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:200002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:220002
+msgid "Output Parser"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:200004
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:220004
+msgid "The output parser is unchanged from the previous notebook, since we are not changing anything about the output format."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:230002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:250002
+msgid "Set up LLM, stop sequence, and the agent"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:230004
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:250004
+msgid "Also the same as the previous notebook"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:270002
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:290002
+msgid "Use the Agent"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval.ipynb:270004
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:290004
+msgid "Now we can use it!"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:10002
+msgid "Plug-and-Plai"
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:10004
+msgid "This notebook builds upon the idea of [tool retrieval](custom_agent_with_plugin_retrieval.html), but pulls all tools from `plugnplai` - a directory of AI Plugins."
+msgstr ""
+
+#: ../docs/use_cases/agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb:30002
+msgid "Install plugnplai lib to get a list of active plugins from https://plugplai.com directory"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:10002
+msgid "SalesGPT - Your Context-Aware AI Sales Assistant"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:10004
+msgid "This notebook demonstrates an implementation of a **Context-Aware** AI Sales agent."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:10006
+msgid "This notebook was originally published at [filipmichalsky/SalesGPT](https://github.com/filip-michalsky/SalesGPT) by [@FilipMichalsky](https://twitter.com/FilipMichalsky)."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:10008
+msgid "SalesGPT is context-aware, which means it can understand what section of a sales conversation it is in and act accordingly."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:10010
+msgid "As such, this agent can have a natural sales conversation with a prospect and behaves based on the conversation stage. Hence, this notebook demonstrates how we can use AI to automate sales development representatives activites, such as outbound sales calls."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:10012
+msgid "We leverage the [`langchain`](https://github.com/hwchase17/langchain) library in this implementation and are inspired by [BabyAGI](https://github.com/yoheinakajima/babyagi) architecture ."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:20002
+msgid "Import Libraries and Set Up Your Environment"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:40002
+msgid "SalesGPT architecture"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:50002
+msgid "Seed the SalesGPT agent"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:50003
+msgid "Run Sales Agent"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:50004
+msgid "Run Sales Stage Recognition Agent to recognize which stage is the sales agent at and adjust their behaviour accordingly."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:60002
+msgid "Here is the schematic of the architecture:"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:70002
+msgid "Architecture diagram"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80002
+msgid "Sales conversation stages."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80004
+msgid "The agent employs an assistant who keeps it in check as in what stage of the conversation it is in. These stages were generated by ChatGPT and can be easily modified to fit other use cases or modes of conversation."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80006
+msgid "Introduction: Start the conversation by introducing yourself and your company. Be polite and respectful while keeping the tone of the conversation professional."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80008
+msgid "Qualification: Qualify the prospect by confirming if they are the right person to talk to regarding your product/service. Ensure that they have the authority to make purchasing decisions."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80010
+msgid "Value proposition: Briefly explain how your product/service can benefit the prospect. Focus on the unique selling points and value proposition of your product/service that sets it apart from competitors."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80012
+msgid "Needs analysis: Ask open-ended questions to uncover the prospect's needs and pain points. Listen carefully to their responses and take notes."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80014
+msgid "Solution presentation: Based on the prospect's needs, present your product/service as the solution that can address their pain points."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80016
+msgid "Objection handling: Address any objections that the prospect may have regarding your product/service. Be prepared to provide evidence or testimonials to support your claims."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:80018
+msgid "Close: Ask for the sale by proposing a next step. This could be a demo, a trial or a meeting with decision-makers. Ensure to summarize what has been discussed and reiterate the benefits."
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:150002
+msgid "Set up the SalesGPT Controller with the Sales Agent and Stage Analyzer"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:170002
+msgid "Set up the AI Sales Agent and start the conversation"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:180002
+msgid "Set up the agent"
+msgstr ""
+
+#: ../docs/use_cases/agents/sales_agent_with_context.ipynb:200002
+msgid "Run the agent"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:10002
+msgid "Wikibase Agent"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:10004
+msgid "This notebook demonstrates a very simple wikibase agent that uses sparql generation. Although this code is intended to work against any wikibase instance, we use http://wikidata.org for testing."
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:10007
+msgid "If you are interested in wikibases and sparql, please consider helping to improve this agent. Look [here](https://github.com/donaldziff/langchain-wikibase) for more details and open questions."
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:20002
+msgid "Preliminaries"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:30002
+msgid "API keys and other secrats"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:30004
+msgid "We use an `.ini` file, like this:"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:50002
+msgid "OpenAI API Key"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:50004
+msgid "An OpenAI API key is required unless you modify the code below to use another LLM provider."
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:70002
+msgid "Wikidata user-agent header"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:70004
+msgid "Wikidata policy requires a user-agent header. See https://meta.wikimedia.org/wiki/User-Agent_policy. However, at present this policy is not strictly enforced."
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:90002
+msgid "Enable tracing if desired"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:110002
+msgid "Tools"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:110004
+msgid "Three tools are provided for this simple agent:"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:110005
+msgid "`ItemLookup`: for finding the q-number of an item"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:110006
+msgid "`PropertyLookup`: for finding the p-number of a property"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:110007
+msgid "`SparqlQueryRunner`: for running a sparql query"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:120002
+msgid "Item and Property lookup"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:120004
+msgid "Item and Property lookup are implemented in a single method, using an elastic search endpoint. Not all wikibase instances have it, but wikidata does, and that's where we'll start."
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:170002
+msgid "Sparql runner"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:180002
+msgid "This tool runs sparql - by default, wikidata is used."
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:210002
+msgid "Agent"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:220002
+msgid "Wrap the tools"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:250002
+msgid "Prompts"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:290002
+msgid "Output parser"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:290003
+msgid "This is unchanged from langchain docs"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:320002
+msgid "Specify the LLM model"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:340002
+msgid "Agent and agent executor"
+msgstr ""
+
+#: ../docs/use_cases/agents/wikibase_agent.ipynb:380002
+msgid "Run it!"
+msgstr ""
+
+#: ../docs/use_cases/apis.md:1
+msgid "Interacting with APIs"
+msgstr ""
+
+#: ../docs/use_cases/apis.md:3
+msgid "[Conceptual Guide](https://docs.langchain.com/docs/use-cases/apis)"
+msgstr ""
+
+#: ../docs/use_cases/apis.md:6
+msgid "Lots of data and information is stored behind APIs. This page covers all resources available in LangChain for working with APIs."
+msgstr ""
+
+#: ../docs/use_cases/apis.md:9
+#: ../docs/use_cases/tabular.md:18
+msgid "Chains"
+msgstr ""
+
+#: ../docs/use_cases/apis.md:11
+msgid "If you are just getting started, and you have relatively simple apis, you should get started with chains. Chains are a sequence of predetermined steps, so they are good to get started with as they give you more control and let you  understand what is happening better."
+msgstr ""
+
+#: ../docs/use_cases/apis.md:15
+msgid "[API Chain](../modules/chains/examples/api.ipynb)"
+msgstr ""
+
+#: ../docs/use_cases/apis.md:17
+#: ../docs/use_cases/tabular.md:26
+msgid "Agents"
+msgstr ""
+
+#: ../docs/use_cases/apis.md:19
+msgid "Agents are more complex, and involve multiple queries to the LLM to understand what to do. The downside of agents are that you have less control. The upside is that they are more powerful, which allows you to use them on larger and more complex schemas."
+msgstr ""
+
+#: ../docs/use_cases/apis.md:23
+msgid "[OpenAPI Agent](../modules/agents/toolkits/examples/openapi.ipynb)"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:1
+msgid "Autonomous Agents"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:4
+msgid "Autonomous Agents are agents that designed to be more long running. You give them one or multiple long term goals, and they independently execute towards those goals. The applications combine tool usage and long term memory."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:8
+msgid "At the moment, Autonomous Agents are fairly experimental and based off of other open-source projects. By implementing these open source projects in LangChain primitives we can get the benefits of LangChain -  easy switching an experimenting with multiple LLMs, usage of different vectorstores as memory,  usage of LangChain's collection of tools."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:13
+msgid "Baby AGI ([Original Repo](https://github.com/yoheinakajima/babyagi))"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:15
+msgid "[Baby AGI](autonomous_agents/baby_agi.ipynb): a notebook implementing BabyAGI as LLM Chains"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:16
+msgid "[Baby AGI with Tools](autonomous_agents/baby_agi_with_agent.ipynb): building off the above notebook, this example substitutes in an agent with tools as the execution tools, allowing it to actually take actions."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:19
+msgid "AutoGPT ([Original Repo](https://github.com/Significant-Gravitas/Auto-GPT))"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:20
+msgid "[AutoGPT](autonomous_agents/autogpt.ipynb): a notebook implementing AutoGPT in LangChain primitives"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:21
+msgid "[WebSearch Research Assistant](autonomous_agents/marathon_times.ipynb): a notebook showing how to use AutoGPT plus specific tools to act as research assistant that can use the web."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:23
+msgid "MetaPrompt ([Original Repo](https://github.com/ngoodman/metaprompt))"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents.md:24
+msgid "[Meta-Prompt](autonomous_agents/meta_prompt.ipynb): a notebook implementing Meta-Prompt in LangChain primitives"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:10002
+msgid "AutoGPT"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:10004
+msgid "Implementation of https://github.com/Significant-Gravitas/Auto-GPT but with LangChain primitives (LLMs, PromptTemplates, VectorStores, Embeddings, Tools)"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:20002
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:50002
+msgid "Set up tools"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:20004
+msgid "We'll set up an AutoGPT with a search tool, and write-file tool, and a read-file tool"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:40002
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:140002
+msgid "Set up memory"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:40004
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:140004
+msgid "The memory here is used for the agents intermediate steps"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:70002
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:160002
+msgid "Setup model and AutoGPT"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:70004
+msgid "Initialize everything! We will use ChatOpenAI model"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:100002
+msgid "Run an example"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/autogpt.ipynb:100004
+msgid "Here we will make it write a weather report for SF"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:10002
+msgid "AutoGPT example finding Winning Marathon Times"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:10004
+msgid "Implementation of https://github.com/Significant-Gravitas/Auto-GPT"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:10005
+msgid "With LangChain primitives (LLMs, PromptTemplates, VectorStores, Embeddings, Tools)"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:50004
+msgid "We'll set up an AutoGPT with a `search` tool, and `write-file` tool, and a `read-file` tool, a web browsing tool, and a tool to interact with a CSV file via a python REPL"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:60002
+msgid "Define any other `tools` you want to use below:"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:80002
+msgid "**Browse a web page with PlayWright**"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:110002
+msgid "**Q&A Over a webpage**"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:110004
+msgid "Help the model ask more directed questions of web pages to avoid cluttering its memory"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:160004
+msgid "`Model set-up`"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:200002
+msgid "AutoGPT for Querying the Web"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:200005
+msgid "I've spent a lot of time over the years crawling data sources and cleaning data. Let's see if AutoGPT can help with this!"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/marathon_times.ipynb:200007
+msgid "Here is the prompt for looking up recent boston marathon times and converting them to tabular form."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10002
+msgid "Meta-Prompt"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10004
+msgid "This is a LangChain implementation of [Meta-Prompt](https://noahgoodman.substack.com/p/meta-prompt-a-simple-self-improving), by [Noah Goodman](https://cocolab.stanford.edu/ndg), for building self-improving agents."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10006
+msgid "The key idea behind Meta-Prompt is to prompt the agent to reflect on its own performance and modify its own instructions."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10008
+msgid "![figure](https://substackcdn.com/image/fetch/f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F468217b9-96d9-47c0-a08b-dbf6b21b9f49_492x384.png)"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10008
+msgid "figure"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10010
+msgid "Here is a description from the [original blog post](https://noahgoodman.substack.com/p/meta-prompt-a-simple-self-improving):"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10013
+msgid "The agent is a simple loop that starts with no instructions and follows these steps:"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10015
+msgid "Engage in conversation with a user, who may provide requests, instructions, or feedback."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10017
+msgid "At the end of the episode, generate self-criticism and a new instruction using the meta-prompt"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10032
+msgid "Repeat."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:10034
+msgid "The only fixed instructions for this system (which I call Meta-prompt) is the meta-prompt that governs revision of the agent’s instructions. The agent has no memory between episodes except for the instruction it modifies for itself each time. Despite its simplicity, this agent can learn over time and self-improve by incorporating useful details into its instructions."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:20002
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:10006
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:20002
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:20002
+#: ../docs/use_cases/evaluation/question_answering.ipynb:20002
+msgid "Setup"
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:20003
+msgid "We define two chains. One serves as the `Assistant`, and the other is a \"meta-chain\" that critiques the `Assistant`'s performance and modifies the instructions to the `Assistant`."
+msgstr ""
+
+#: ../docs/use_cases/autonomous_agents/meta_prompt.ipynb:60002
+msgid "Specify a task and interact with the agent"
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:1
+msgid "Chatbots"
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:3
+msgid "[Conceptual Guide](https://docs.langchain.com/docs/use-cases/chatbots)"
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:6
+msgid "Since language models are good at producing text, that makes them ideal for creating chatbots. Aside from the base prompts/LLMs, an important concept to know for Chatbots is `memory`. Most chat based applications rely on remembering what happened in previous interactions, which `memory` is designed to help with."
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:10
+#: ../docs/use_cases/question_answering.md:60
+#: ../docs/use_cases/question_answering.md:77
+#: ../docs/use_cases/summarization.md:17
+msgid "The following resources exist:"
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:11
+msgid "[ChatGPT Clone](../modules/agents/agent_executors/examples/chatgpt_clone.ipynb): A notebook walking through how to recreate a ChatGPT-like experience with LangChain."
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:12
+msgid "[Conversation Memory](../modules/memory/getting_started.ipynb): A notebook walking through how to use different types of conversational memory."
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:13
+msgid "[Conversation Agent](../modules/agents/agents/examples/conversational_agent.ipynb): A notebook walking through how to create an agent optimized for conversation."
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:16
+#: ../docs/use_cases/question_answering.md:84
+#: ../docs/use_cases/summarization.md:20
+msgid "Additional related resources include:"
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:17
+msgid "[Memory Key Concepts](../modules/memory.rst): Explanation of key concepts related to memory."
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:18
+msgid "[Memory Examples](../modules/memory/how_to_guides.rst): A collection of how-to examples for working with memory."
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:20
+msgid "More end-to-end examples include:"
+msgstr ""
+
+#: ../docs/use_cases/chatbots.md:21
+msgid "[Voice Assistant](chatbots/voice_assistant.ipynb): A notebook walking through how to create a voice assistant using LangChain."
+msgstr ""
+
+#: ../docs/use_cases/chatbots/voice_assistant.ipynb:10002
+msgid "Voice Assistant"
+msgstr ""
+
+#: ../docs/use_cases/chatbots/voice_assistant.ipynb:10004
+msgid "This chain creates a clone of ChatGPT with a few modifications to make it a voice assistant.  It uses the `pyttsx3` and `speech_recognition` libraries to convert text to speech and speech to text respectively. The prompt template is also changed to make it more suitable for voice assistant use."
+msgstr ""
+
+#: ../docs/use_cases/code.md:1
+msgid "Code Understanding"
+msgstr ""
+
+#: ../docs/use_cases/code.md:3
+msgid "Overview"
+msgstr ""
+
+#: ../docs/use_cases/code.md:5
+msgid "LangChain is a useful tool designed to parse GitHub code repositories. By leveraging VectorStores, Conversational RetrieverChain, and GPT-4, it can answer questions in the context of an entire GitHub repository or generate new code. This documentation page outlines the essential components of the system and guides using LangChain for better code comprehension, contextual question answering, and code generation in GitHub repositories."
+msgstr ""
+
+#: ../docs/use_cases/code.md:7
+msgid "Conversational Retriever Chain"
+msgstr ""
+
+#: ../docs/use_cases/code.md:9
+msgid "Conversational RetrieverChain is a retrieval-focused system that interacts with the data stored in a VectorStore. Utilizing advanced techniques, like context-aware filtering and ranking, it retrieves the most relevant code snippets and information for a given user query. Conversational RetrieverChain is engineered to deliver high-quality, pertinent results while considering conversation history and context."
+msgstr ""
+
+#: ../docs/use_cases/code.md:11
+msgid "LangChain Workflow for Code Understanding and Generation"
+msgstr ""
+
+#: ../docs/use_cases/code.md:13
+msgid "Index the code base: Clone the target repository, load all files within, chunk the files, and execute the indexing process. Optionally, you can skip this step and use an already indexed dataset."
+msgstr ""
+
+#: ../docs/use_cases/code.md:15
+msgid "Embedding and Code Store: Code snippets are embedded using a code-aware embedding model and stored in a VectorStore. Query Understanding: GPT-4 processes user queries, grasping the context and extracting relevant details."
+msgstr ""
+
+#: ../docs/use_cases/code.md:18
+msgid "Construct the Retriever: Conversational RetrieverChain searches the VectorStore to identify the most relevant code snippets for a given query."
+msgstr ""
+
+#: ../docs/use_cases/code.md:20
+msgid "Build the Conversational Chain: Customize the retriever settings and define any user-defined filters as needed."
+msgstr ""
+
+#: ../docs/use_cases/code.md:22
+msgid "Ask questions: Define a list of questions to ask about the codebase, and then use the ConversationalRetrievalChain to generate context-aware answers. The LLM (GPT-4) generates comprehensive, context-aware answers based on retrieved code snippets and conversation history."
+msgstr ""
+
+#: ../docs/use_cases/code.md:24
+msgid "The full tutorial is available below."
+msgstr ""
+
+#: ../docs/use_cases/code.md:25
+msgid "[Twitter the-algorithm codebase analysis with Deep Lake](code/twitter-the-algorithm-analysis-deeplake.ipynb): A notebook walking through how to parse github source code and run queries conversation."
+msgstr ""
+
+#: ../docs/use_cases/code.md:26
+msgid "[LangChain codebase analysis with Deep Lake](code/code-analysis-deeplake.ipynb): A notebook walking through how to analyze and do question answering over THIS code base."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:10002
+msgid "Use LangChain, GPT and Deep Lake to work with code base"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:10003
+msgid "In this tutorial, we are going to use Langchain + Deep Lake with GPT to analyze the code base of the LangChain itself."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:20002
+msgid "Design"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:30002
+msgid "Prepare data:"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:30003
+msgid "Upload all python project files using the `langchain.document_loaders.TextLoader`. We will call these files the **documents**."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:30004
+msgid "Split all documents to chunks using the `langchain.text_splitter.CharacterTextSplitter`."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:30005
+msgid "Embed chunks and upload them into the DeepLake using `langchain.embeddings.openai.OpenAIEmbeddings` and `langchain.vectorstores.DeepLake`"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:30006
+msgid "Question-Answering:"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:30007
+msgid "Build a chain from `langchain.chat_models.ChatOpenAI` and `langchain.chains.ConversationalRetrievalChain`"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:30008
+msgid "Prepare questions."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:30009
+msgid "Get answers running the chain."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:40002
+msgid "Implementation"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:50002
+msgid "Integration preparations"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:60002
+msgid "We need to set up keys for external services and install necessary python libraries."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:80002
+msgid "Set up OpenAI embeddings, Deep Lake multi-modal vector store api and authenticate."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:80004
+msgid "For full documentation of Deep Lake please follow https://docs.activeloop.ai/ and API reference https://docs.deeplake.ai/en/latest/"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:100002
+msgid "Authenticate into Deep Lake if you want to create your own dataset and publish it. You can get an API key from the platform at [app.activeloop.ai](https://app.activeloop.ai)"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:120002
+msgid "Prepare data"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:130002
+msgid "Load all repository files. Here we assume this notebook is downloaded as the part of the langchain fork and we work with the python files of the `langchain` repo."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:130004
+msgid "If you want to use files from different repo, change `root_dir` to the root dir of your repo."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:150002
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:110002
+msgid "Then, chunk the files"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:170002
+msgid "Then embed chunks and upload them to the DeepLake."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:170004
+msgid "This can take several minutes."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:200002
+#: ../docs/use_cases/evaluation/question_answering.ipynb:10002
+msgid "Question Answering"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:200003
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:150003
+msgid "First load the dataset, construct the retriever, then construct the Conversational Chain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:230002
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:180002
+msgid "You can also specify user defined functions using [Deep Lake filters](https://docs.deeplake.ai/en/latest/deeplake.core.dataset.html#deeplake.core.dataset.Dataset.filter)"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270002
+msgid "-> **Question**: What is the class hierarchy?"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270004
+msgid "**Answer**: There are several class hierarchies in the provided code, so I'll list a few:"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270006
+msgid "`BaseModel` -> `ConstitutionalPrinciple`: `ConstitutionalPrinciple` is a subclass of `BaseModel`."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270007
+msgid "`BasePromptTemplate` -> `StringPromptTemplate`, `AIMessagePromptTemplate`, `BaseChatPromptTemplate`, `ChatMessagePromptTemplate`, `ChatPromptTemplate`, `HumanMessagePromptTemplate`, `MessagesPlaceholder`, `SystemMessagePromptTemplate`, `FewShotPromptTemplate`, `FewShotPromptWithTemplates`, `Prompt`, `PromptTemplate`: All of these classes are subclasses of `BasePromptTemplate`."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270008
+msgid "`APIChain`, `Chain`, `MapReduceDocumentsChain`, `MapRerankDocumentsChain`, `RefineDocumentsChain`, `StuffDocumentsChain`, `HypotheticalDocumentEmbedder`, `LLMChain`, `LLMBashChain`, `LLMCheckerChain`, `LLMMathChain`, `LLMRequestsChain`, `PALChain`, `QAWithSourcesChain`, `VectorDBQAWithSourcesChain`, `VectorDBQA`, `SQLDatabaseChain`: All of these classes are subclasses of `Chain`."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270009
+msgid "`BaseLoader`: `BaseLoader` is a subclass of `ABC`."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270010
+msgid "`BaseTracer` -> `ChainRun`, `LLMRun`, `SharedTracer`, `ToolRun`, `Tracer`, `TracerException`, `TracerSession`: All of these classes are subclasses of `BaseTracer`."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270011
+msgid "`OpenAIEmbeddings`, `HuggingFaceEmbeddings`, `CohereEmbeddings`, `JinaEmbeddings`, `LlamaCppEmbeddings`, `HuggingFaceHubEmbeddings`, `TensorflowHubEmbeddings`, `SagemakerEndpointEmbeddings`, `HuggingFaceInstructEmbeddings`, `SelfHostedEmbeddings`, `SelfHostedHuggingFaceEmbeddings`, `SelfHostedHuggingFaceInstructEmbeddings`, `FakeEmbeddings`, `AlephAlphaAsymmetricSemanticEmbedding`, `AlephAlphaSymmetricSemanticEmbedding`: All of these classes are subclasses of `BaseLLM`."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270014
+msgid "-> **Question**: What classes are derived from the Chain class?"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270016
+msgid "**Answer**: There are multiple classes that are derived from the Chain class. Some of them are:"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270017
+msgid "APIChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270018
+msgid "AnalyzeDocumentChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270019
+msgid "ChatVectorDBChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270020
+msgid "CombineDocumentsChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270021
+msgid "ConstitutionalChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270022
+msgid "ConversationChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270023
+msgid "GraphQAChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270024
+msgid "HypotheticalDocumentEmbedder"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270025
+msgid "LLMChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270026
+msgid "LLMCheckerChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270027
+msgid "LLMRequestsChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270028
+msgid "LLMSummarizationCheckerChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270029
+msgid "MapReduceChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270030
+msgid "OpenAPIEndpointChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270031
+msgid "PALChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270032
+msgid "QAWithSourcesChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270033
+msgid "RetrievalQA"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270034
+msgid "RetrievalQAWithSourcesChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270035
+msgid "SequentialChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270036
+msgid "SQLDatabaseChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270037
+msgid "TransformChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270038
+msgid "VectorDBQA"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270039
+msgid "VectorDBQAWithSourcesChain"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270041
+msgid "There might be more classes that are derived from the Chain class as it is possible to create custom classes that extend the Chain class."
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270044
+msgid "-> **Question**: What classes and functions in the ./langchain/utilities/ forlder are not covered by unit tests?"
+msgstr ""
+
+#: ../docs/use_cases/code/code-analysis-deeplake.ipynb:270046
+msgid "**Answer**: All classes and functions in the `./langchain/utilities/` folder seem to have unit tests written for them."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:10002
+msgid "Analysis of Twitter the-algorithm source code with LangChain, GPT4 and Deep Lake"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:10003
+msgid "In this tutorial, we are going to use Langchain + Deep Lake with GPT4 to analyze the code base of the twitter algorithm."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:30002
+msgid "Define OpenAI embeddings, Deep Lake multi-modal vector store api and authenticate. For full documentation of Deep Lake please follow [docs](https://docs.activeloop.ai/) and [API reference](https://docs.deeplake.ai/en/latest/)."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:30004
+msgid "Authenticate into Deep Lake if you want to create your own dataset and publish it. You can get an API key from the [platform](https://app.activeloop.ai)"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:60002
+msgid "disallowed_special=() is required to avoid `Exception: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte` from tiktoken for some repositories"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:70002
+msgid "1. Index the code base (optional)"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:70003
+msgid "You can directly skip this part and directly jump into using already indexed dataset. To begin with, first we will clone the repository, then parse and chunk the code base and use OpenAI indexing."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:90002
+msgid "Load all files inside the repository"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:130002
+msgid "Execute the indexing. This will take about ~4 mins to compute embeddings and upload to Activeloop. You can then publish the dataset to be public."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:150002
+msgid "2. Question Answering on Twitter algorithm codebase"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220002
+msgid "-> **Question**: What does favCountParams do?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220004
+msgid "**Answer**: `favCountParams` is an optional ThriftLinearFeatureRankingParams instance that represents the parameters related to the \"favorite count\" feature in the ranking process. It is used to control the weight of the favorite count feature while ranking tweets. The favorite count is the number of times a tweet has been marked as a favorite by users, and it is considered an important signal in the ranking of tweets. By using `favCountParams`, the system can adjust the importance of the favorite count while calculating the final ranking score of a tweet."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220006
+msgid "-> **Question**: is it Likes + Bookmarks, or not clear from the code?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220008
+msgid "**Answer**: From the provided code, it is not clear if the favorite count metric is determined by the sum of likes and bookmarks. The favorite count is mentioned in the code, but there is no explicit reference to how it is calculated in terms of likes and bookmarks."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220010
+msgid "-> **Question**: What are the major negative modifiers that lower your linear ranking parameters?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220012
+msgid "**Answer**: In the given code, major negative modifiers that lower the linear ranking parameters are:"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220014
+msgid "`scoringData.querySpecificScore`: This score adjustment is based on the query-specific information. If its value is negative, it will lower the linear ranking parameters."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220016
+msgid "`scoringData.authorSpecificScore`: This score adjustment is based on the author-specific information. If its value is negative, it will also lower the linear ranking parameters."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220018
+msgid "Please note that I cannot provide more information on the exact calculations of these negative modifiers, as the code for their determination is not provided."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220020
+msgid "-> **Question**: How do you get assigned to SimClusters?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220022
+msgid "**Answer**: The assignment to SimClusters occurs through a Metropolis-Hastings sampling-based community detection algorithm that is run on the Producer-Producer similarity graph. This graph is created by computing the cosine similarity scores between the users who follow each producer. The algorithm identifies communities or clusters of Producers with similar followers, and takes a parameter *k* for specifying the number of communities to be detected."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220024
+msgid "After the community detection, different users and content are represented as sparse, interpretable vectors within these identified communities (SimClusters). The resulting SimClusters embeddings can be used for various recommendation tasks."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220026
+msgid "-> **Question**: What is needed to migrate from one SimClusters to another SimClusters?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220028
+msgid "**Answer**: To migrate from one SimClusters representation to another, you can follow these general steps:"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220030
+msgid "**Prepare the new representation**: Create the new SimClusters representation using any necessary updates or changes in the clustering algorithm, similarity measures, or other model parameters. Ensure that this new representation is properly stored and indexed as needed."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220032
+msgid "**Update the relevant code and configurations**: Modify the relevant code and configuration files to reference the new SimClusters representation. This may involve updating paths or dataset names to point to the new representation, as well as changing code to use the new clustering method or similarity functions if applicable."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220034
+msgid "**Test the new representation**: Before deploying the changes to production, thoroughly test the new SimClusters representation to ensure its effectiveness and stability. This may involve running offline jobs like candidate generation and label candidates, validating the output, as well as testing the new representation in the evaluation environment using evaluation tools like TweetSimilarityEvaluationAdhocApp."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220036
+msgid "**Deploy the changes**: Once the new representation has been tested and validated, deploy the changes to production. This may involve creating a zip file, uploading it to the packer, and then scheduling it with Aurora. Be sure to monitor the system to ensure a smooth transition between representations and verify that the new representation is being used in recommendations as expected."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220038
+msgid "**Monitor and assess the new representation**: After the new representation has been deployed, continue to monitor its performance and impact on recommendations. Take note of any improvements or issues that arise and be prepared to iterate on the new representation if needed. Always ensure that the results and performance metrics align with the system's goals and objectives."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220040
+msgid "-> **Question**: How much do I get boosted within my cluster?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220042
+msgid "**Answer**: It's not possible to determine the exact amount your content is boosted within your cluster in the SimClusters representation without specific data about your content and its engagement metrics. However, a combination of factors, such as the favorite score and follow score, alongside other engagement signals and SimCluster calculations, influence the boosting of content."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220044
+msgid "-> **Question**: How does Heavy ranker work. what are it’s main inputs?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220046
+msgid "**Answer**: The Heavy Ranker is a machine learning model that plays a crucial role in ranking and scoring candidates within the recommendation algorithm. Its primary purpose is to predict the likelihood of a user engaging with a tweet or connecting with another user on the platform."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220048
+msgid "Main inputs to the Heavy Ranker consist of:"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220050
+msgid "Static Features: These are features that can be computed directly from a tweet at the time it's created, such as whether it has a URL, has cards, has quotes, etc. These features are produced by the Index Ingester as the tweets are generated and stored in the index."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220052
+msgid "Real-time Features: These per-tweet features can change after the tweet has been indexed. They mostly consist of social engagements like retweet count, favorite count, reply count, and some spam signals that are computed with later activities. The Signal Ingester, which is part of a Heron topology, processes multiple event streams to collect and compute these real-time features."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220054
+msgid "User Table Features: These per-user features are obtained from the User Table Updater that processes a stream written by the user service. This input is used to store sparse real-time user information, which is later propagated to the tweet being scored by looking up the author of the tweet."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220056
+msgid "Search Context Features: These features represent the context of the current searcher, like their UI language, their content consumption, and the current time (implied). They are combined with Tweet Data to compute some of the features used in scoring."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220058
+msgid "These inputs are then processed by the Heavy Ranker to score and rank candidates based on their relevance and likelihood of engagement by the user."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220060
+msgid "-> **Question**: How can one influence Heavy ranker?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220062
+msgid "**Answer**: To influence the Heavy Ranker's output or ranking of content, consider the following actions:"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220064
+msgid "Improve content quality: Create high-quality and engaging content that is relevant, informative, and valuable to users. High-quality content is more likely to receive positive user engagement, which the Heavy Ranker considers when ranking content."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220066
+msgid "Increase user engagement: Encourage users to interact with content through likes, retweets, replies, and comments. Higher engagement levels can lead to better ranking in the Heavy Ranker's output."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220068
+msgid "Optimize your user profile: A user's reputation, based on factors such as their follower count and follower-to-following ratio, may impact the ranking of their content. Maintain a good reputation by following relevant users, keeping a reasonable follower-to-following ratio and engaging with your followers."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220070
+msgid "Enhance content discoverability: Use relevant keywords, hashtags, and mentions in your tweets, making it easier for users to find and engage with your content. This increased discoverability may help improve the ranking of your content by the Heavy Ranker."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220072
+msgid "Leverage multimedia content: Experiment with different content formats, such as videos, images, and GIFs, which may capture users' attention and increase engagement, resulting in better ranking by the Heavy Ranker."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220074
+msgid "User feedback: Monitor and respond to feedback for your content. Positive feedback may improve your ranking, while negative feedback provides an opportunity to learn and improve."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220076
+msgid "Note that the Heavy Ranker uses a combination of machine learning models and various features to rank the content. While the above actions may help influence the ranking, there are no guarantees as the ranking process is determined by a complex algorithm, which evolves over time."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220078
+msgid "-> **Question**: why threads and long tweets do so well on the platform?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220080
+msgid "**Answer**: Threads and long tweets perform well on the platform for several reasons:"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220082
+msgid "**More content and context**: Threads and long tweets provide more information and context about a topic, which can make the content more engaging and informative for users. People tend to appreciate a well-structured and detailed explanation of a subject or a story, and threads and long tweets can do that effectively."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220084
+msgid "**Increased user engagement**: As threads and long tweets provide more content, they also encourage users to engage with the tweets through replies, retweets, and likes. This increased engagement can lead to better visibility of the content, as the Twitter algorithm considers user engagement when ranking and surfacing tweets."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220086
+msgid "**Narrative structure**: Threads enable users to tell stories or present arguments in a step-by-step manner, making the information more accessible and easier to follow. This narrative structure can capture users' attention and encourage them to read through the entire thread and interact with the content."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220088
+msgid "**Expanded reach**: When users engage with a thread, their interactions can bring the content to the attention of their followers, helping to expand the reach of the thread. This increased visibility can lead to more interactions and higher performance for the threaded tweets."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220090
+msgid "**Higher content quality**: Generally, threads and long tweets require more thought and effort to create, which may lead to higher quality content. Users are more likely to appreciate and interact with high-quality, well-reasoned content, further improving the performance of these tweets within the platform."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220092
+msgid "Overall, threads and long tweets perform well on Twitter because they encourage user engagement and provide a richer, more informative experience that users find valuable."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220094
+msgid "-> **Question**: Are thread and long tweet creators building a following that reacts to only threads?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220096
+msgid "**Answer**: Based on the provided code and context, there isn't enough information to conclude if the creators of threads and long tweets primarily build a following that engages with only thread-based content. The code provided is focused on Twitter's recommendation and ranking algorithms, as well as infrastructure components like Kafka, partitions, and the Follow Recommendations Service (FRS). To answer your question, data analysis of user engagement and results of specific edge cases would be required."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220098
+msgid "-> **Question**: Do you need to follow different strategies to get most followers vs to get most likes and bookmarks per tweet?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220100
+msgid "**Answer**: Yes, different strategies need to be followed to maximize the number of followers compared to maximizing likes and bookmarks per tweet. While there may be some overlap in the approaches, they target different aspects of user engagement."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220102
+msgid "Maximizing followers: The primary focus is on growing your audience on the platform. Strategies include:"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220104
+msgid "Consistently sharing high-quality content related to your niche or industry."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220105
+msgid "Engaging with others on the platform by replying, retweeting, and mentioning other users."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220106
+msgid "Using relevant hashtags and participating in trending conversations."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220107
+msgid "Collaborating with influencers and other users with a large following."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220108
+msgid "Posting at optimal times when your target audience is most active."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220109
+msgid "Optimizing your profile by using a clear profile picture, catchy bio, and relevant links."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220111
+msgid "Maximizing likes and bookmarks per tweet: The focus is on creating content that resonates with your existing audience and encourages engagement. Strategies include:"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220113
+msgid "Crafting engaging and well-written tweets that encourage users to like or save them."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220114
+msgid "Incorporating visually appealing elements, such as images, GIFs, or videos, that capture attention."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220115
+msgid "Asking questions, sharing opinions, or sparking conversations that encourage users to engage with your tweets."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220116
+msgid "Using analytics to understand the type of content that resonates with your audience and tailoring your tweets accordingly."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220117
+msgid "Posting a mix of educational, entertaining, and promotional content to maintain variety and interest."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220118
+msgid "Timing your tweets strategically to maximize engagement, likes, and bookmarks per tweet."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220120
+msgid "Both strategies can overlap, and you may need to adapt your approach by understanding your target audience's preferences and analyzing your account's performance. However, it's essential to recognize that maximizing followers and maximizing likes and bookmarks per tweet have different focuses and require specific strategies."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220122
+msgid "-> **Question**: Content meta data and how it impacts virality (e.g. ALT in images)."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220124
+msgid "**Answer**: There is no direct information in the provided context about how content metadata, such as ALT text in images, impacts the virality of a tweet or post. However, it's worth noting that including ALT text can improve the accessibility of your content for users who rely on screen readers, which may lead to increased engagement for a broader audience. Additionally, metadata can be used in search engine optimization, which might improve the visibility of the content, but the context provided does not mention any specific correlation with virality."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220126
+msgid "-> **Question**: What are some unexpected fingerprints for spam factors?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220128
+msgid "**Answer**: In the provided context, an unusual indicator of spam factors is when a tweet contains a non-media, non-news link. If the tweet has a link but does not have an image URL, video URL, or news URL, it is considered a potential spam vector, and a threshold for user reputation (tweepCredThreshold) is set to MIN_TWEEPCRED_WITH_LINK."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220130
+msgid "While this rule may not cover all possible unusual spam indicators, it is derived from the specific codebase and logic shared in the context."
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220132
+msgid "-> **Question**: Is there any difference between company verified checkmarks and blue verified individual checkmarks?"
+msgstr ""
+
+#: ../docs/use_cases/code/twitter-the-algorithm-analysis-deeplake.ipynb:220134
+msgid "**Answer**: Yes, there is a distinction between the verified checkmarks for companies and blue verified checkmarks for individuals. The code snippet provided mentions \"Blue-verified account boost\" which indicates that there is a separate category for blue verified accounts. Typically, blue verified checkmarks are used to indicate notable individuals, while verified checkmarks are for companies or organizations."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:2
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:130002
+#: ../docs/use_cases/evaluation/question_answering.ipynb:110002
+msgid "Evaluation"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:5
+msgid "`Conceptual Guide <https://docs.langchain.com/docs/use-cases/evaluation>`_"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:8
+msgid "This section of documentation covers how we approach and think about evaluation in LangChain. Both evaluation of internal chains/agents, but also how we would recommend people building on top of LangChain approach evaluation."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:12
+msgid "The Problem"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:14
+msgid "It can be really hard to evaluate LangChain chains and agents. There are two main reasons for this:"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:17
+#: ../docs/use_cases/evaluation.rst:41
+msgid "**# 1: Lack of data**"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:19
+msgid "You generally don't have a ton of data to evaluate your chains/agents over before starting a project. This is usually because Large Language Models (the core of most chains/agents) are terrific few-shot and zero shot learners, meaning you are almost always able to get started on a particular task (text-to-SQL, question answering, etc) without a large dataset of examples. This is in stark contrast to traditional machine learning where you had to first collect a bunch of datapoints before even getting started using a model."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:26
+#: ../docs/use_cases/evaluation.rst:53
+msgid "**# 2: Lack of metrics**"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:28
+msgid "Most chains/agents are performing tasks for which there are not very good metrics to evaluate performance. For example, one of the most common use cases is generating text of some form. Evaluating generated text is much more complicated than evaluating a classification prediction, or a numeric prediction."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:33
+msgid "The Solution"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:35
+msgid "LangChain attempts to tackle both of those issues. What we have so far are initial passes at solutions - we do not think we have a perfect solution. So we very much welcome feedback, contributions, integrations, and thoughts on this."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:39
+msgid "Here is what we have for each problem so far:"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:43
+msgid "We have started `LangChainDatasets <https://huggingface.co/LangChainDatasets>`_ a Community space on Hugging Face. We intend this to be a collection of open source datasets for evaluating common chains and agents. We have contributed five datasets of our own to start, but we highly intend this to be a community effort. In order to contribute a dataset, you simply need to join the community and then you will be able to upload datasets."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:48
+msgid "We're also aiming to make it as easy as possible for people to create their own datasets. As a first pass at this, we've added a QAGenerationChain, which given a document comes up with question-answer pairs that can be used to evaluate question-answering tasks over that document down the line. See `this notebook <./evaluation/qa_generation.html>`_ for an example of how to use this chain."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:55
+msgid "We have two solutions to the lack of metrics."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:57
+msgid "The first solution is to use no metrics, and rather just rely on looking at results by eye to get a sense for how the chain/agent is performing. To assist in this, we have developed (and will continue to develop) `tracing <../tracing.html>`_, a UI-based visualizer of your chain and agent runs."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:60
+msgid "The second solution we recommend is to use Language Models themselves to evaluate outputs. For this we have a few different chains and prompts aimed at tackling this issue."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:64
+msgid "The Examples"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:66
+msgid "We have created a bunch of examples combining the above two solutions to show how we internally evaluate chains and agents when we are developing. In addition to the examples we've curated, we also highly welcome contributions here. To facilitate that, we've included a `template notebook <./evaluation/benchmarking_template.html>`_ for community members to use to build their own examples."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:70
+msgid "The existing examples we have are:"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:72
+msgid "`Question Answering (State of Union) <./evaluation/qa_benchmarking_sota.html>`_: A notebook showing evaluation of a question-answering task over a State-of-the-Union address."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:74
+msgid "`Question Answering (Paul Graham Essay) <./evaluation/qa_benchmarking_pg.html>`_: A notebook showing evaluation of a question-answering task over a Paul Graham essay."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:76
+msgid "`SQL Question Answering (Chinook) <./evaluation/sql_qa_benchmarking_chinook.html>`_: A notebook showing evaluation of a question-answering task over a SQL database (the Chinook database)."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:78
+msgid "`Agent Vectorstore <./evaluation/agent_vectordb_sota_pg.html>`_: A notebook showing evaluation of an agent doing question answering while routing between two different vector databases."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:80
+msgid "`Agent Search + Calculator <./evaluation/agent_benchmarking.html>`_: A notebook showing evaluation of an agent doing question answering using a Search engine and a Calculator as tools."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:82
+msgid "`Evaluating an OpenAPI Chain <./evaluation/openapi_eval.html>`_: A notebook showing evaluation of an OpenAPI chain, including how to generate test data if you don't have any."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:86
+msgid "Other Examples"
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:88
+msgid "In addition, we also have some more generic resources for evaluation."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:90
+msgid "`Question Answering <./evaluation/question_answering.html>`_: An overview of LLMs aimed at evaluating question answering systems in general."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:92
+msgid "`Data Augmented Question Answering <./evaluation/data_augmented_question_answering.html>`_: An end-to-end example of evaluating a question answering system focused on a specific document (a RetrievalQAChain to be precise). This example highlights how to use LLMs to come up with question/answer examples to evaluate over, and then highlights how to use LLMs to evaluate performance on those generated examples."
+msgstr ""
+
+#: ../docs/use_cases/evaluation.rst:94
+msgid "`Hugging Face Datasets <./evaluation/huggingface_datasets.html>`_: Covers an example of loading and using a dataset from Hugging Face for evaluation."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:10002
+msgid "Agent Benchmarking: Search + Calculator"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:10004
+msgid "Here we go over how to benchmark performance of an agent on tasks where it has access to a calculator and a search tool."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:10006
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:10006
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:20002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:10006
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:10006
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:10006
+msgid "It is highly reccomended that you do any evaluation/benchmarking with tracing enabled. See [here](https://langchain.readthedocs.io/en/latest/tracing.html) for an explanation of what tracing is and how to set it up."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:30002
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:30002
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:40002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:30002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:30002
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:30002
+msgid "Loading the data"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:30003
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:30003
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:40004
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:30003
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:30003
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:30004
+msgid "First, let's load the data."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:50002
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:70002
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:60002
+#: ../docs/use_cases/evaluation/llm_math.ipynb:40002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:50002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:50002
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:60002
+msgid "Setting up a chain"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:50003
+msgid "Now we need to load an agent capable of answering these questions."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:70002
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:210002
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:80002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:120002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:120002
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:110002
+msgid "Make a prediction"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:70004
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:210004
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:80004
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:120004
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:120004
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:110004
+msgid "First, we can make predictions one datapoint at a time. Doing it at this level of granularity allows use to explore the outputs in detail, and also is a lot cheaper than running over multiple datapoints"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:90002
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:230002
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:100002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:140002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:140002
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:130002
+msgid "Make many predictions"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:90003
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:230003
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:140003
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:140003
+msgid "Now we can make predictions"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:120002
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:250002
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:120002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:160002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:160002
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:150002
+msgid "Evaluate performance"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:120003
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:250003
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:160003
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:160003
+msgid "Now we can evaluate the predictions. The first thing we can do is look at them by eye."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:140002
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:270002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:180002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:180002
+msgid "Next, we can use a language model to score them programatically"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:170002
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:300002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:210002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:210002
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:180002
+msgid "We can add in the graded output to the `predictions` dict and then get a count of the grades."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_benchmarking.ipynb:200002
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:330002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:240002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:240002
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:210002
+msgid "We can also filter the datapoints to the incorrect examples and look at them."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:10002
+msgid "Agent VectorDB Question Answering Benchmarking"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:10004
+msgid "Here we go over how to benchmark performance on a question answering task using an agent to route between multiple vectordatabases."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:70003
+msgid "Now we need to create some pipelines for doing question answering. Step one in that is creating indexes over the data in question."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:110002
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:90002
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:90002
+msgid "Now we can create a question answering chain."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:140002
+msgid "Now we do the same for the Paul Graham data."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/agent_vectordb_sota_pg.ipynb:180002
+msgid "We can now set up an agent to route between them."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:10002
+msgid "Benchmarking Template"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:10004
+msgid "This is an example notebook that can be used to create a benchmarking notebook for a task of your choice. Evaluation is really hard, and so we greatly welcome any contributions that can make it easier for people to experiment"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:60004
+msgid "This next section should have an example of setting up a chain that can be run on this dataset."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:100003
+msgid "Now we can make predictions."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/benchmarking_template.ipynb:120004
+msgid "Any guide to evaluating performance in a more systematic manner goes here."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:10002
+msgid "Data Augmented Question Answering"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:10004
+msgid "This notebook uses some generic prompts/language models to evaluate an question answering system that uses other sources of data besides what is in the model. For example, this can be used to evaluate a question answering system over your proprietary data."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:10007
+msgid "Let's set up an example with our favorite example - the state of the union address."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:40002
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:60002
+#: ../docs/use_cases/evaluation/question_answering.ipynb:60002
+msgid "Examples"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:40003
+msgid "Now we need some examples to evaluate. We can do this in two ways:"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:40005
+msgid "Hard code some examples ourselves"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:40006
+msgid "Generate examples automatically, using a language model"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:100002
+msgid "Evaluate"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:100003
+msgid "Now that we have examples, we can use the question answering evaluator to evaluate our question answering chain."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:160002
+msgid "Evaluate with Other Metrics"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:160004
+msgid "In addition to predicting whether the answer is correct or incorrect using a language model, we can also use other metrics to get a more nuanced view on the quality of the answers. To do so, we can use the [Critique](https://docs.inspiredco.ai/critique/) library, which allows for simple calculation of various metrics over generated text."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:160006
+msgid "First you can get an API key from the [Inspired Cognition Dashboard](https://dashboard.inspiredco.ai) and do some setup:"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:180002
+msgid "Then run the following code to set up the configuration and calculate the [ROUGE](https://docs.inspiredco.ai/critique/metric_rouge.html), [chrf](https://docs.inspiredco.ai/critique/metric_chrf.html), [BERTScore](https://docs.inspiredco.ai/critique/metric_bert_score.html), and [UniEval](https://docs.inspiredco.ai/critique/metric_uni_eval.html) (you can choose [other metrics](https://docs.inspiredco.ai/critique/metrics.html) too):"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/data_augmented_question_answering.ipynb:210002
+msgid "Finally, we can print out the results. We can see that overall the scores are higher when the output is semantically correct, and also when the output closely matches with the gold-standard answer."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:10002
+msgid "Generic Agent Evaluation"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:10004
+msgid "Good evaluation is key for quickly iterating on your agent's prompts and tools. Here we provide an example of how to use the TrajectoryEvalChain to evaluate your agent."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:20004
+msgid "Let's start by defining our agent."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:40002
+msgid "Testing the Agent"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:40004
+msgid "Now let's try our agent out on some example queries."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:60002
+msgid "This looks good! Let's try it out on another query."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:80002
+msgid "This doesn't look so good. Let's try running some evaluation."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:80004
+msgid "Evaluating the Agent"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:80006
+msgid "Let's start by defining the TrajectoryEvalChain."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:100002
+msgid "Let's try evaluating the first query."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:120002
+msgid "That seems about right. Let's try the second query."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/generic_agent_evaluation.ipynb:140002
+msgid "That also sounds about right. In conclusion, the TrajectoryEvalChain allows us to use GPT-4 to score both our agent's outputs and tool use in addition to giving us the reasoning behind the evaluation."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:10002
+msgid "Using Hugging Face Datasets"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:10004
+msgid "This example shows how to use Hugging Face datasets to evaluate models. Specifically, we show how to load examples to evaluate models on from Hugging Face's dataset package."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:20004
+msgid "For demonstration purposes, we will just evaluate a simple question answering system."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:60004
+msgid "Now we load a dataset from Hugging Face, and then convert it to a list of dictionaries for easier usage."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:100002
+#: ../docs/use_cases/evaluation/question_answering.ipynb:80002
+msgid "Predictions"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:100004
+#: ../docs/use_cases/evaluation/question_answering.ipynb:80004
+msgid "We can now make and inspect the predictions for these questions."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/huggingface_datasets.ipynb:130004
+msgid "Because these answers are more complex than multiple choice, we can now evaluate their accuracy using a language model."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/llm_math.ipynb:10002
+msgid "LLM Math"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/llm_math.ipynb:10004
+msgid "Evaluating chains that know how to do math."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/llm_math.ipynb:40003
+msgid "Now we need to create some pipelines for doing math."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:10002
+msgid "Evaluating an OpenAPI Chain"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:10004
+msgid "This notebook goes over ways to semantically evaluate an [OpenAPI Chain](openapi.ipynb), which calls an endpoint defined by the OpenAPI specification using purely natural language."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:30002
+msgid "Load the API Chain"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:30004
+msgid "Load a wrapper of the spec (so we can work with it more easily). You can load from a url or from a local file."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:50002
+msgid "*Optional*: Generate Input Questions and Request Ground Truth Queries"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:50004
+msgid "See [Generating Test Datasets](#Generating-Test-Datasets) at the end of this notebook for more details."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:80002
+msgid "Run the API Chain"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:80004
+msgid "The two simplest questions a user of the API Chain are:"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:80005
+msgid "Did the chain succesfully access the endpoint?"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:80006
+msgid "Did the action accomplish the correct result?"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:160002
+msgid "Evaluate the requests chain"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:160004
+msgid "The API Chain has two main components:"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:160005
+msgid "Translate the user query to an API request (request synthesizer)"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:160006
+msgid "Translate the API response to a natural language response"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:160008
+msgid "Here, we construct an evaluation chain to grade the request synthesizer against selected human queries"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:220002
+msgid "Evaluate the Response Chain"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:220004
+msgid "The second component translated the structured API response to a natural language response. Evaluate this against the user's original question."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:290002
+msgid "Generating Test Datasets"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:290004
+msgid "To evaluate a chain against your own endpoint, you'll want to generate a test dataset that's conforms to the API."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:290006
+msgid "This section provides an overview of how to bootstrap the process."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:290008
+msgid "First, we'll parse the OpenAPI Spec. For this example, we'll [Speak](https://www.speak.com/)'s OpenAPI specification."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/openapi_eval.ipynb:390002
+msgid "**Now you can use the `ground_truth` as shown above in [Evaluate the Requests Chain](#Evaluate-the-requests-chain)!**"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:10002
+msgid "Question Answering Benchmarking: Paul Graham Essay"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:10004
+msgid "Here we go over how to benchmark performance on a question answering task over a Paul Graham essay."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/qa_benchmarking_pg.ipynb:50003
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:50003
+msgid "Now we need to create some pipelines for doing question answering. Step one in that is creating an index over the data in question."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:10002
+msgid "Question Answering Benchmarking: State of the Union Address"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/qa_benchmarking_sota.ipynb:10004
+msgid "Here we go over how to benchmark performance on a question answering task over a state of the union address."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/qa_generation.ipynb:10002
+msgid "QA Generation"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/qa_generation.ipynb:10003
+msgid "This notebook shows how to use the `QAGenerationChain` to come up with question-answer pairs over a specific document. This is important because often times you may not have data to evaluate your question-answer system over, so this is a cheap and lightweight way to generate it!"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:10004
+msgid "This notebook covers how to evaluate generic question answering problems. This is a situation where you have an example containing a question and its corresponding ground truth answer, and you want to measure how well the language model does at answering those questions."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:20004
+msgid "For demonstration purposes, we will just evaluate a simple question answering system that only evaluates the model's internal knowledge. Please see other notebooks for examples where it evaluates how the model does at question answering over data not present in what the model was trained on."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:60003
+msgid "For this purpose, we will just use two simple hardcoded examples, but see other notebooks for tips on how to get and/or generate these examples."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:110004
+msgid "We can see that if we tried to just do exact match on the answer answers (`11` and `No`) they would not match what the language model answered. However, semantically the language model is correct in both cases. In order to account for this, we can use a language model itself to evaluate the answers."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:150002
+msgid "Customize Prompt"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:150004
+msgid "You can also customize the prompt that is used. Here is an example prompting it using a score from 0 to 10. The custom prompt requires 3 input variables: \"query\", \"answer\" and \"result\". Where \"query\" is the question, \"answer\" is the ground truth answer, and \"result\" is the predicted answer."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:180002
+msgid "Evaluation without Ground Truth"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:180003
+msgid "Its possible to evaluate question answering systems without ground truth. You would need a `\"context\"` input that reflects what the information the LLM uses to answer the question. This context can be obtained by any retreival system. Here's an example of how it works:"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:230002
+msgid "Comparing to other evaluation metrics"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/question_answering.ipynb:230003
+msgid "We can compare the evaluation results we get to other common evaluation metrics. To do this, let's load some evaluation metrics from HuggingFace's `evaluate` package."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:10002
+msgid "SQL Question Answering Benchmarking: Chinook"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:10004
+msgid "Here we go over how to benchmark performance on a question answering task over a SQL database."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:60003
+msgid "This uses the example Chinook database. To set it up follow the instructions on https://database.guide/2-sample-databases-sqlite/, placing the `.db` file in a notebooks folder at the root of this repository."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:60006
+msgid "Note that here we load a simple chain. If you want to experiment with more complex chains, or an agent, just create the `chain` object in a different way."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:90002
+msgid "Now we can create a SQL database chain."
+msgstr ""
+
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:130003
+msgid "Now we can make predictions. Note that we add a try-except because this chain can sometimes error (if SQL is written incorrectly, etc)"
+msgstr ""
+
+#: ../docs/use_cases/evaluation/sql_qa_benchmarking_chinook.ipynb:150003
+msgid "Now we can evaluate the predictions. We can use a language model to score them programatically"
+msgstr ""
+
+#: ../docs/use_cases/extraction.md:1
+msgid "Extraction"
+msgstr ""
+
+#: ../docs/use_cases/extraction.md:3
+msgid "[Conceptual Guide](https://docs.langchain.com/docs/use-cases/extraction)"
+msgstr ""
+
+#: ../docs/use_cases/extraction.md:6
+msgid "Most APIs and databases still deal with structured information. Therefore, in order to better work with those, it can be useful to extract structured information from text. Examples of this include:"
+msgstr ""
+
+#: ../docs/use_cases/extraction.md:10
+msgid "Extracting a structured row to insert into a database from a sentence"
+msgstr ""
+
+#: ../docs/use_cases/extraction.md:11
+msgid "Extracting multiple rows to insert into a database from a long document"
+msgstr ""
+
+#: ../docs/use_cases/extraction.md:12
+msgid "Extracting the correct API parameters from a user query"
+msgstr ""
+
+#: ../docs/use_cases/extraction.md:14
+msgid "This work is extremely related to [output parsing](../modules/prompts/output_parsers.rst). Output parsers are responsible for instructing the LLM to respond in a specific format. In this case, the output parsers specify the format of the data you would like to extract from the document. Then, in addition to the output format instructions, the prompt should also contain the data you would like to extract information from."
+msgstr ""
+
+#: ../docs/use_cases/extraction.md:19
+msgid "While normal output parsers are good enough for basic structuring of response data, when doing extraction you often want to extract more complicated or nested structures. For a deep dive on extraction, we recommend checking out [`kor`](https://eyurtsev.github.io/kor/), a library that uses the existing LangChain chain and OutputParser abstractions but deep dives on allowing extraction of more complicated schemas."
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:1
+msgid "Personal Assistants (Agents)"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:3
+msgid "[Conceptual Guide](https://docs.langchain.com/docs/use-cases/personal-assistants)"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:6
+msgid "We use \"personal assistant\" here in a very broad sense. Personal assistants have a few characteristics:"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:9
+msgid "They can interact with the outside world"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:10
+msgid "They have knowledge of your data"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:11
+msgid "They remember your interactions"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:13
+msgid "Really all of the functionality in LangChain is relevant for building a personal assistant. Highlighting specific parts:"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:16
+msgid "[Agent Documentation](../modules/agents.rst) (for interacting with the outside world)"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:17
+msgid "[Index Documentation](../modules/indexes.rst) (for giving them knowledge of your data)"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:18
+msgid "[Memory](../modules/memory.rst) (for helping them remember interactions)"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:20
+msgid "Specific examples of this include:"
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:22
+msgid "[AI Plugins](agents/custom_agent_with_plugin_retrieval.ipynb): an implementation of an agent that is designed to be able to use all AI Plugins."
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:23
+msgid "[Plug-and-PlAI (Plugins Database)](agents/custom_agent_with_plugin_retrieval_using_plugnplai.ipynb): an implementation of an agent that is designed to be able to use all AI Plugins retrieved from PlugNPlAI."
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:24
+msgid "[Wikibase Agent](agents/wikibase_agent.ipynb): an implementation of an agent that is designed to interact with Wikibase."
+msgstr ""
+
+#: ../docs/use_cases/personal_assistants.md:25
+msgid "[Sales GPT](agents/sales_agent_with_context.ipynb): This notebook demonstrates an implementation of a Context-Aware AI Sales agent."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:1
+msgid "Question Answering over Docs"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:3
+msgid "[Conceptual Guide](https://docs.langchain.com/docs/use-cases/qa-docs)"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:5
+msgid "Question answering in this context refers to question answering over your document data. For question answering over other types of data, please see other sources documentation like [SQL database Question Answering](./tabular.md) or [Interacting with APIs](./apis.md)."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:8
+msgid "For question answering over many documents, you almost always want to create an index over the data. This can be used to smartly access the most relevant documents for a given question, allowing you to avoid having to pass all the documents to the LLM (saving you time and money)."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:11
+msgid "See [this notebook](../modules/indexes/getting_started.ipynb) for a more detailed introduction to this, but for a super quick start the steps involved are:"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:13
+msgid "**Load Your Documents**"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:20
+msgid "See [here](../modules/indexes/document_loaders.rst) for more information on how to get started with document loading."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:22
+msgid "**Create Your Index**"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:29
+msgid "The best and most popular index by far at the moment is the VectorStore index."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:31
+msgid "**Query Your Index**"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:38
+msgid "Alternatively, use `query_with_sources` to also get back the sources involved"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:45
+msgid "Again, these high level interfaces obfuscate a lot of what is going on under the hood, so please see [this notebook](../modules/indexes/getting_started.ipynb) for a lower level walkthrough."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:47
+msgid "Document Question Answering"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:49
+msgid "Question answering involves fetching multiple documents, and then asking a question of them. The LLM response will contain the answer to your question, based on the content of the documents."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:52
+msgid "The recommended way to get started using a question answering chain is:"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:62
+msgid "[Question Answering Notebook](../modules/chains/index_examples/question_answering.ipynb): A notebook walking through how to accomplish this task."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:63
+msgid "[VectorDB Question Answering Notebook](../modules/chains/index_examples/vector_db_qa.ipynb): A notebook walking through how to do question answering over a vector database. This can often be useful for when you have a LOT of documents, and you don't want to pass them all to the LLM, but rather first want to do some semantic search over embeddings."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:65
+msgid "Adding in sources"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:67
+msgid "There is also a variant of this, where in addition to responding with the answer the language model will also cite its sources (eg which of the documents passed in it used)."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:69
+msgid "The recommended way to get started using a question answering with sources chain is:"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:79
+msgid "[QA With Sources Notebook](../modules/chains/index_examples/qa_with_sources.ipynb): A notebook walking through how to accomplish this task."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:80
+msgid "[VectorDB QA With Sources Notebook](../modules/chains/index_examples/vector_db_qa_with_sources.ipynb): A notebook walking through how to do question answering with sources over a vector database. This can often be useful for when you have a LOT of documents, and you don't want to pass them all to the LLM, but rather first want to do some semantic search over embeddings."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:82
+msgid "Additional Related Resources"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:86
+msgid "[Utilities for working with Documents](/modules/utils/how_to_guides.rst): Guides on how to use several of the utilities which will prove helpful for this task, including Text Splitters (for splitting up long documents) and Embeddings & Vectorstores (useful for the above Vector DB example)."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:87
+msgid "[CombineDocuments Chains](/modules/indexes/combine_docs.md): A conceptual overview of specific types of chains by which you can accomplish this task."
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:89
+msgid "End-to-end examples"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:91
+msgid "For examples to this done in an end-to-end manner, please see the following resources:"
+msgstr ""
+
+#: ../docs/use_cases/question_answering.md:93
+msgid "[Semantic search over a group chat with Sources Notebook](question_answering/semantic-search-over-chat.ipynb): A notebook that semantically searches over a group chat conversation."
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:10002
+msgid "Question answering over a group chat messages"
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:10003
+msgid "In this tutorial, we are going to use Langchain + Deep Lake with GPT4 to semantically search and ask questions over a group chat."
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:10005
+msgid "View a working demo [here](https://twitter.com/thisissukh_/status/1647223328363679745)"
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:20002
+msgid "1. Install required packages"
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:40002
+msgid "2. Add API keys"
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:70004
+msgid "2. Create sample data"
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:80002
+msgid "You can generate a sample group chat conversation using ChatGPT with this prompt:"
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:80008
+msgid "I've already generated such a chat in `messages.txt`. We can keep it simple and use this for our example."
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:80010
+msgid "3. Ingest chat embeddings"
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:80012
+msgid "We load the messages in the text file, chunk and upload to ActiveLoop Vector store."
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:100002
+msgid "4. Ask questions"
+msgstr ""
+
+#: ../docs/use_cases/question_answering/semantic-search-over-chat.ipynb:100004
+msgid "Now we can ask a question and get an answer back with a semantic search:"
+msgstr ""
+
+#: ../docs/use_cases/summarization.md:1
+msgid "Summarization"
+msgstr ""
+
+#: ../docs/use_cases/summarization.md:3
+msgid "[Conceptual Guide](https://docs.langchain.com/docs/use-cases/summarization)"
+msgstr ""
+
+#: ../docs/use_cases/summarization.md:6
+msgid "Summarization involves creating a smaller summary of multiple longer documents. This can be useful for distilling long documents into the core pieces of information."
+msgstr ""
+
+#: ../docs/use_cases/summarization.md:9
+msgid "The recommended way to get started using a summarization chain is:"
+msgstr ""
+
+#: ../docs/use_cases/summarization.md:18
+msgid "[Summarization Notebook](../modules/chains/index_examples/summarize.ipynb): A notebook walking through how to accomplish this task."
+msgstr ""
+
+#: ../docs/use_cases/summarization.md:21
+msgid "[Utilities for working with Documents](../reference/utils.rst): Guides on how to use several of the utilities which will prove helpful for this task, including Text Splitters (for splitting up long documents)."
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:1
+msgid "Querying Tabular Data"
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:3
+msgid "[Conceptual Guide](https://docs.langchain.com/docs/use-cases/qa-tabular)"
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:6
+msgid "Lots of data and information is stored in tabular data, whether it be csvs, excel sheets, or SQL tables. This page covers all resources available in LangChain for working with data in this format."
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:9
+msgid "Document Loading"
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:10
+msgid "If you have text data stored in a tabular format, you may want to load the data into a Document and then index it as you would other text/unstructured data. For this, you should use a document loader like the [CSVLoader](../modules/indexes/document_loaders/examples/csv.ipynb) and then you should [create an index](../modules/indexes.rst) over that data, and [query it that way](../modules/chains/index_examples/vector_db_qa.ipynb)."
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:14
+msgid "Querying"
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:15
+msgid "If you have more numeric tabular data, or have a large amount of data and don't want to index it, you should get started by looking at various chains and agents we have for dealing with this data."
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:20
+msgid "If you are just getting started, and you have relatively small/simple tabular data, you should get started with chains. Chains are a sequence of predetermined steps, so they are good to get started with as they give you more control and let you  understand what is happening better."
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:24
+msgid "[SQL Database Chain](../modules/chains/examples/sqlite.ipynb)"
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:28
+msgid "Agents are more complex, and involve multiple queries to the LLM to understand what to do. The downside of agents are that you have less control. The upside is that they are more powerful, which allows you to use them on larger databases and more complex schemas."
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:32
+msgid "[SQL Agent](../modules/agents/toolkits/examples/sql_database.ipynb)"
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:33
+msgid "[Pandas Agent](../modules/agents/toolkits/examples/pandas.ipynb)"
+msgstr ""
+
+#: ../docs/use_cases/tabular.md:34
+msgid "[CSV Agent](../modules/agents/toolkits/examples/csv.ipynb)"
+msgstr ""

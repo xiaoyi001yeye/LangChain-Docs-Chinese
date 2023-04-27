@@ -1,0 +1,153 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Harrison Chase
+# This file is distributed under the same license as the 🦜🔗 LangChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 🦜🔗 LangChain 0.0.150\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 12:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/gallery.rst:2
+msgid "LangChain Gallery"
+msgstr ""
+
+#: ../docs/gallery.rst:4
+msgid "Lots of people have built some pretty awesome stuff with LangChain. This is a collection of our favorites. If you see any other demos that you think we should highlight, be sure to let us know!"
+msgstr ""
+
+#: ../docs/gallery.rst:10
+msgid "Open Source"
+msgstr ""
+
+#: ../docs/gallery.rst:24
+msgid "This is an experiment in building a large-language-model-backed chatbot. It can hold a conversation, remember previous comments/questions, and answer all types of queries (history, web search, movie data, weather, news, and more)."
+msgstr ""
+
+#: ../docs/gallery.rst:36
+msgid "An end-to-end example of doing question answering on YouTube transcripts, returning the timestamps as sources to legitimize the answer."
+msgstr ""
+
+#: ../docs/gallery.rst:47
+msgid "This application is a Slack Bot that uses Langchain and OpenAI's GPT3 language model to provide domain specific answers. You provide the documents."
+msgstr ""
+
+#: ../docs/gallery.rst:58
+msgid "A central, open resource and community around data and tools related to chain-of-thought reasoning in large language models."
+msgstr ""
+
+#: ../docs/gallery.rst:69
+msgid "This Python package adds a decorator llm_strategy that connects to an LLM (such as OpenAI’s GPT-3) and uses the LLM to \"implement\" abstract methods in interface classes. It does this by forwarding requests to the LLM and converting the responses back to Python data using Python's @dataclasses."
+msgstr ""
+
+#: ../docs/gallery.rst:80
+msgid "A notebook showing how to use GPT to help with the work of a corporate lobbyist."
+msgstr ""
+
+#: ../docs/gallery.rst:91
+msgid "A jupyter notebook demonstrating how you could create a semantic search engine on documents in one of your Google Folders"
+msgstr ""
+
+#: ../docs/gallery.rst:102
+msgid "Build a GitHub support bot with GPT3, LangChain, and Python."
+msgstr ""
+
+#: ../docs/gallery.rst:113
+msgid "Record sounds of anything (birds, wind, fire, train station) and chat with it."
+msgstr ""
+
+#: ../docs/gallery.rst:124
+msgid "This simple application demonstrates a conversational agent implemented with OpenAI GPT-3.5 and LangChain. When necessary, it leverages tools for complex math, searching the internet, and accessing news and weather."
+msgstr ""
+
+#: ../docs/gallery.rst:135
+msgid "A Hugging Face spaces project showing off the benefits of using PAL for math problems."
+msgstr ""
+
+#: ../docs/gallery.rst:146
+msgid "Measure the political compass of GPT."
+msgstr ""
+
+#: ../docs/gallery.rst:157
+msgid "Open source GitHub project shows how to use LangChain to create a chatbot that can answer questions about an arbitrary Notion database."
+msgstr ""
+
+#: ../docs/gallery.rst:168
+msgid "LlamaIndex (formerly GPT Index) is a project consisting of a set of data structures that are created using GPT-3 and can be traversed using GPT-3 in order to answer queries."
+msgstr ""
+
+#: ../docs/gallery.rst:179
+msgid "Leveraging Qiskit, OpenAI and LangChain to demonstrate Grover's algorithm"
+msgstr ""
+
+#: ../docs/gallery.rst:190
+msgid "A chat UI to play Nim, where a player can select an opponent, either a quantum computer or an AI"
+msgstr ""
+
+#: ../docs/gallery.rst:201
+msgid "Leveraging the ReActTextWorldAgent to play TextWorld with an LLM!"
+msgstr ""
+
+#: ../docs/gallery.rst:212
+msgid "This repo is a simple demonstration of using LangChain to do fact-checking with prompt chaining."
+msgstr ""
+
+#: ../docs/gallery.rst:223
+msgid "Answer questions about the documentation of any project"
+msgstr ""
+
+#: ../docs/gallery.rst:226
+msgid "Misc. Colab Notebooks"
+msgstr ""
+
+#: ../docs/gallery.rst:240
+msgid "Give ChatGPT a WolframAlpha neural implant"
+msgstr ""
+
+#: ../docs/gallery.rst:251
+msgid "Agent improvements (6th Jan 2023)"
+msgstr ""
+
+#: ../docs/gallery.rst:262
+msgid "Langchain AGI (23rd Dec 2022)"
+msgstr ""
+
+#: ../docs/gallery.rst:265
+msgid "Proprietary"
+msgstr ""
+
+#: ../docs/gallery.rst:279
+msgid "A chat-based AI personal assistant with long-term memory about you."
+msgstr ""
+
+#: ../docs/gallery.rst:290
+msgid "Summarize not only long docs, interview audio or video files quickly, but also entire websites and YouTube videos. Share or download your generated summaries to collaborate with others, or revisit them at any time! Bonus: `@anysummary <https://twitter.com/anysummary>`_ on Twitter will also summarize any thread it is tagged in."
+msgstr ""
+
+#: ../docs/gallery.rst:301
+msgid "An app to write SQL using natural language, and execute against real DB."
+msgstr ""
+
+#: ../docs/gallery.rst:312
+msgid "Stack Tracing QA Bot to help debug complex stack tracing (especially the ones that go multi-function/file deep)."
+msgstr ""
+
+#: ../docs/gallery.rst:323
+msgid "By Raza Habib, this demo utilizes LangChain + SerpAPI + HumanLoop to write sales emails. Give it a company name and a person, this application will use Google Search (via SerpAPI) to get more information on the company and the person, and then write them a sales message."
+msgstr ""
+
+#: ../docs/gallery.rst:334
+msgid "By Zahid Khawaja, this demo utilizes question answering to answer questions about a given website. A followup added this for `YouTube videos <https://twitter.com/chillzaza_/status/1593739682013220865?s=20&t=EhU8jl0KyCPJ7vE9Rnz-cQ>`_, and then another followup added it for `Wikipedia <https://twitter.com/chillzaza_/status/1594847151238037505?s=20&t=EhU8jl0KyCPJ7vE9Rnz-cQ>`_."
+msgstr ""
+
+#: ../docs/gallery.rst:345
+msgid "A journaling app for self-care that uses AI to uncover insights and patterns over time."
+msgstr ""

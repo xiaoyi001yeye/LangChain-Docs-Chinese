@@ -1,0 +1,444 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Harrison Chase
+# This file is distributed under the same license as the 🦜🔗 LangChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 🦜🔗 LangChain 0.0.150\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 12:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/reference.rst:2
+msgid "API References"
+msgstr ""
+
+#: ../docs/reference.rst:4
+msgid "All of LangChain's reference documentation, in one place. Full documentation on all methods, classes, and APIs in LangChain."
+msgstr ""
+
+#: ../docs/reference/agents.rst:2
+#: ../docs/reference/modules/agents.rst:2
+msgid "Agents"
+msgstr ""
+
+#: ../docs/reference/agents.rst:4
+msgid "Reference guide for Agents and associated abstractions."
+msgstr ""
+
+#: ../docs/reference/indexes.rst:2
+msgid "Indexes"
+msgstr ""
+
+#: ../docs/reference/indexes.rst:3
+msgid "Indexes refer to ways to structure documents so that LLMs can best interact with them. LangChain has a number of modules that help you load, structure, store, and retrieve documents."
+msgstr ""
+
+#: ../docs/reference/installation.md:1
+msgid "Installation"
+msgstr ""
+
+#: ../docs/reference/installation.md:3
+msgid "Official Releases"
+msgstr ""
+
+#: ../docs/reference/installation.md:5
+msgid "LangChain is available on PyPi, so to it is easily installable with:"
+msgstr ""
+
+#: ../docs/reference/installation.md:11
+msgid "That will install the bare minimum requirements of LangChain. A lot of the value of LangChain comes when integrating it with various model providers, datastores, etc. By default, the dependencies needed to do that are NOT installed. However, there are two other ways to install LangChain that do bring in those dependencies."
+msgstr ""
+
+#: ../docs/reference/installation.md:16
+msgid "To install modules needed for the common LLM providers, run:"
+msgstr ""
+
+#: ../docs/reference/installation.md:22
+msgid "To install all modules needed for all integrations, run:"
+msgstr ""
+
+#: ../docs/reference/installation.md:28
+msgid "Note that if you are using `zsh`, you'll need to quote square brackets when passing them as an argument to a command, for example:"
+msgstr ""
+
+#: ../docs/reference/installation.md:34
+msgid "Installing from source"
+msgstr ""
+
+#: ../docs/reference/installation.md:36
+msgid "If you want to install from source, you can do so by cloning the repo and running:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:1
+msgid "Integrations"
+msgstr ""
+
+#: ../docs/reference/integrations.md:3
+msgid "Besides the installation of this python package, you will also need to install packages and set environment variables depending on which chains you want to use."
+msgstr ""
+
+#: ../docs/reference/integrations.md:5
+msgid "Note: the reason these packages are not included in the dependencies by default is that as we imagine scaling this package, we do not want to force dependencies that are not needed."
+msgstr ""
+
+#: ../docs/reference/integrations.md:7
+msgid "The following use cases require specific installs and api keys:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:9
+msgid "_OpenAI_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:10
+#: ../docs/reference/integrations.md:16
+msgid "Install requirements with `pip install openai`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:11
+msgid "Get an OpenAI api key and either set it as an environment variable (`OPENAI_API_KEY`) or pass it to the LLM constructor as `openai_api_key`."
+msgstr ""
+
+#: ../docs/reference/integrations.md:12
+msgid "_Cohere_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:13
+msgid "Install requirements with `pip install cohere`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:14
+msgid "Get a Cohere api key and either set it as an environment variable (`COHERE_API_KEY`) or pass it to the LLM constructor as `cohere_api_key`."
+msgstr ""
+
+#: ../docs/reference/integrations.md:15
+msgid "_GooseAI_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:17
+msgid "Get an GooseAI api key and either set it as an environment variable (`GOOSEAI_API_KEY`) or pass it to the LLM constructor as `gooseai_api_key`."
+msgstr ""
+
+#: ../docs/reference/integrations.md:18
+msgid "_Hugging Face Hub_"
+msgstr ""
+
+#: ../docs/reference/integrations.md:19
+msgid "Install requirements with `pip install huggingface_hub`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:20
+msgid "Get a Hugging Face Hub api token and either set it as an environment variable (`HUGGINGFACEHUB_API_TOKEN`) or pass it to the LLM constructor as `huggingfacehub_api_token`."
+msgstr ""
+
+#: ../docs/reference/integrations.md:21
+msgid "_Petals_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:22
+msgid "Install requirements with `pip install petals`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:23
+msgid "Get an GooseAI api key and either set it as an environment variable (`HUGGINGFACE_API_KEY`) or pass it to the LLM constructor as `huggingface_api_key`."
+msgstr ""
+
+#: ../docs/reference/integrations.md:24
+msgid "_CerebriumAI_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:25
+msgid "Install requirements with `pip install cerebrium`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:26
+msgid "Get a Cerebrium api key and either set it as an environment variable (`CEREBRIUMAI_API_KEY`) or pass it to the LLM constructor as `cerebriumai_api_key`."
+msgstr ""
+
+#: ../docs/reference/integrations.md:27
+msgid "_PromptLayer_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:28
+msgid "Install requirements with `pip install promptlayer` (be sure to be on version 0.1.62 or higher)"
+msgstr ""
+
+#: ../docs/reference/integrations.md:29
+msgid "Get an API key from [promptlayer.com](http://www.promptlayer.com) and set it using `promptlayer.api_key=<API KEY>`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:30
+msgid "_SerpAPI_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:31
+msgid "Install requirements with `pip install google-search-results`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:32
+msgid "Get a SerpAPI api key and either set it as an environment variable (`SERPAPI_API_KEY`) or pass it to the LLM constructor as `serpapi_api_key`."
+msgstr ""
+
+#: ../docs/reference/integrations.md:33
+msgid "_GoogleSearchAPI_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:34
+msgid "Install requirements with `pip install google-api-python-client`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:35
+msgid "Get a Google api key and either set it as an environment variable (`GOOGLE_API_KEY`) or pass it to the LLM constructor as `google_api_key`. You will also need to set the `GOOGLE_CSE_ID` environment variable to your custom search engine id. You can pass it to the LLM constructor as `google_cse_id` as well."
+msgstr ""
+
+#: ../docs/reference/integrations.md:36
+msgid "_WolframAlphaAPI_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:37
+msgid "Install requirements with `pip install wolframalpha`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:38
+msgid "Get a Wolfram Alpha api key and either set it as an environment variable (`WOLFRAM_ALPHA_APPID`) or pass it to the LLM constructor as `wolfram_alpha_appid`."
+msgstr ""
+
+#: ../docs/reference/integrations.md:39
+msgid "_NatBot_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:40
+msgid "Install requirements with `pip install playwright`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:41
+msgid "_Wikipedia_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:42
+msgid "Install requirements with `pip install wikipedia`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:43
+msgid "_Elasticsearch_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:44
+msgid "Install requirements with `pip install elasticsearch`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:45
+msgid "Set up Elasticsearch backend. If you want to do locally, [this](https://www.elastic.co/guide/en/elasticsearch/reference/7.17/getting-started.html) is a good guide."
+msgstr ""
+
+#: ../docs/reference/integrations.md:46
+msgid "_FAISS_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:47
+msgid "Install requirements with `pip install faiss` for Python 3.7 and `pip install faiss-cpu` for Python 3.10+."
+msgstr ""
+
+#: ../docs/reference/integrations.md:48
+msgid "_MyScale_"
+msgstr ""
+
+#: ../docs/reference/integrations.md:49
+msgid "Install requirements with `pip install clickhouse-connect`. For documentations, please refer to [this document](https://docs.myscale.com/en/overview/)."
+msgstr ""
+
+#: ../docs/reference/integrations.md:50
+msgid "_Manifest_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:51
+msgid "Install requirements with `pip install manifest-ml` (Note: this is only available in Python 3.8+ currently)."
+msgstr ""
+
+#: ../docs/reference/integrations.md:52
+msgid "_OpenSearch_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:53
+msgid "Install requirements with `pip install opensearch-py`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:54
+msgid "If you want to set up OpenSearch on your local, [here](https://opensearch.org/docs/latest/)"
+msgstr ""
+
+#: ../docs/reference/integrations.md:55
+msgid "_DeepLake_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:56
+msgid "Install requirements with `pip install deeplake`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:57
+msgid "_LlamaCpp_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:58
+msgid "Install requirements with `pip install llama-cpp-python`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:59
+msgid "Download model and convert following [llama.cpp instructions](https://github.com/ggerganov/llama.cpp)"
+msgstr ""
+
+#: ../docs/reference/integrations.md:60
+msgid "_Milvus_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:61
+#: ../docs/reference/integrations.md:64
+msgid "Install requirements with `pip install pymilvus`"
+msgstr ""
+
+#: ../docs/reference/integrations.md:62
+msgid "In order to setup a local cluster, take a look [here](https://milvus.io/docs)."
+msgstr ""
+
+#: ../docs/reference/integrations.md:63
+msgid "_Zilliz_:"
+msgstr ""
+
+#: ../docs/reference/integrations.md:65
+msgid "To get up and running, take a look [here](https://zilliz.com/doc/quick_start)."
+msgstr ""
+
+#: ../docs/reference/integrations.md:68
+msgid "If you are using the `NLTKTextSplitter` or the `SpacyTextSplitter`, you will also need to install the appropriate models. For example, if you want to use the `SpacyTextSplitter`, you will need to install the `en_core_web_sm` model with `python -m spacy download en_core_web_sm`. Similarly, if you want to use the `NLTKTextSplitter`, you will need to install the `punkt` model with `python -m nltk.downloader punkt`."
+msgstr ""
+
+#: ../docs/reference/models.rst:2
+msgid "Models"
+msgstr ""
+
+#: ../docs/reference/models.rst:4
+msgid "LangChain provides interfaces and integrations for a number of different types of models."
+msgstr ""
+
+#: ../docs/reference/modules/agent_toolkits.rst:2
+msgid "Agent Toolkits"
+msgstr ""
+
+#: ../docs/reference/modules/chains.rst:2
+msgid "Chains"
+msgstr ""
+
+#: ../docs/reference/modules/chat_models.rst:2
+msgid "Chat Models"
+msgstr ""
+
+#: ../docs/reference/modules/docstore.rst:2
+msgid "Docstore"
+msgstr ""
+
+#: ../docs/reference/modules/document_compressors.rst:2
+msgid "Document Compressors"
+msgstr ""
+
+#: ../docs/reference/modules/document_loaders.rst:2
+msgid "Document Loaders"
+msgstr ""
+
+#: ../docs/reference/modules/document_transformers.rst:2
+msgid "Document Transformers"
+msgstr ""
+
+#: ../docs/reference/modules/embeddings.rst:2
+msgid "Embeddings"
+msgstr ""
+
+#: ../docs/reference/modules/example_selector.rst:2
+msgid "Example Selector"
+msgstr ""
+
+#: ../docs/reference/modules/experimental.rst:3
+msgid "Experimental Modules"
+msgstr ""
+
+#: ../docs/reference/modules/experimental.rst:5
+msgid "This module contains experimental modules and reproductions of existing work using LangChain primitives."
+msgstr ""
+
+#: ../docs/reference/modules/experimental.rst:8
+msgid "Autonomous Agents"
+msgstr ""
+
+#: ../docs/reference/modules/experimental.rst:10
+msgid "Here, we document the BabyAGI and AutoGPT classes from the langchain.experimental module."
+msgstr ""
+
+#: ../docs/reference/modules/experimental.rst:20
+msgid "Generative Agents"
+msgstr ""
+
+#: ../docs/reference/modules/experimental.rst:22
+msgid "Here, we document the GenerativeAgent and GenerativeAgentMemory classes from the langchain.experimental module."
+msgstr ""
+
+#: ../docs/reference/modules/llms.rst:2
+msgid "LLMs"
+msgstr ""
+
+#: ../docs/reference/modules/memory.rst:2
+msgid "Memory"
+msgstr ""
+
+#: ../docs/reference/modules/output_parsers.rst:2
+msgid "Output Parsers"
+msgstr ""
+
+#: ../docs/reference/modules/prompts.rst:2
+msgid "PromptTemplates"
+msgstr ""
+
+#: ../docs/reference/modules/python.rst:2
+msgid "Python REPL"
+msgstr ""
+
+#: ../docs/reference/modules/retrievers.rst:2
+msgid "Retrievers"
+msgstr ""
+
+#: ../docs/reference/modules/searx_search.rst:2
+msgid "SearxNG Search"
+msgstr ""
+
+#: ../docs/reference/modules/serpapi.rst:2
+msgid "SerpAPI"
+msgstr ""
+
+#: ../docs/reference/modules/text_splitter.rst:2
+msgid "Text Splitter"
+msgstr ""
+
+#: ../docs/reference/modules/tools.rst:2
+msgid "Tools"
+msgstr ""
+
+#: ../docs/reference/modules/utilities.rst:2
+msgid "Utilities"
+msgstr ""
+
+#: ../docs/reference/modules/vectorstores.rst:2
+msgid "Vector Stores"
+msgstr ""
+
+#: ../docs/reference/prompts.rst:2
+msgid "Prompts"
+msgstr ""
+
+#: ../docs/reference/prompts.rst:4
+msgid "The reference guides here all relate to objects for working with Prompts."
+msgstr ""

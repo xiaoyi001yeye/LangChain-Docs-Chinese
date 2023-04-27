@@ -1,0 +1,199 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Harrison Chase
+# This file is distributed under the same license as the 🦜🔗 LangChain package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: 🦜🔗 LangChain 0.0.150\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-04-27 12:46+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: ../docs/tracing.md:1
+msgid "Tracing"
+msgstr ""
+
+#: ../docs/tracing.md:3
+msgid "By enabling tracing in your LangChain runs, you’ll be able to more effectively visualize, step through, and debug your chains and agents."
+msgstr ""
+
+#: ../docs/tracing.md:5
+msgid "First, you should install tracing and set up your environment properly. You can use either a locally hosted version of this (uses Docker) or a cloud hosted version (in closed alpha). If you're interested in using the hosted platform, please fill out the form [here](https://forms.gle/tRCEMSeopZf6TE3b6)."
+msgstr ""
+
+#: ../docs/tracing.md:10
+msgid "[Locally Hosted Setup](./tracing/local_installation.md)"
+msgstr ""
+
+#: ../docs/tracing.md:11
+msgid "[Cloud Hosted Setup](./tracing/hosted_installation.md)"
+msgstr ""
+
+#: ../docs/tracing.md:13
+#: ../docs/tracing/agent_with_tracing.ipynb:10002
+msgid "Tracing Walkthrough"
+msgstr ""
+
+#: ../docs/tracing.md:15
+msgid "When you first access the UI, you should see a page with your tracing sessions.  An initial one \"default\" should already be created for you.  A session is just a way to group traces together.  If you click on a session, it will take you to a page with no recorded traces that says \"No Runs.\"  You can create a new session with the new session form."
+msgstr ""
+
+#: ../docs/tracing.md:21
+msgid "![](tracing/homepage.png)"
+msgstr ""
+
+#: ../docs/tracing.md:23
+msgid "If we click on the `default` session, we can see that to start we have no traces stored."
+msgstr ""
+
+#: ../docs/tracing.md:25
+msgid "![](tracing/default_empty.png)"
+msgstr ""
+
+#: ../docs/tracing.md:27
+msgid "If we now start running chains and agents with tracing enabled, we will see data show up here. To do so, we can run [this notebook](tracing/agent_with_tracing.ipynb) as an example. After running it, we will see an initial trace show up."
+msgstr ""
+
+#: ../docs/tracing.md:31
+msgid "![](tracing/first_trace.png)"
+msgstr ""
+
+#: ../docs/tracing.md:33
+msgid "From here we can explore the trace at a high level by clicking on the arrow to show nested runs. We can keep on clicking further and further down to explore deeper and deeper."
+msgstr ""
+
+#: ../docs/tracing.md:36
+msgid "![](tracing/explore.png)"
+msgstr ""
+
+#: ../docs/tracing.md:38
+msgid "We can also click on the \"Explore\" button of the top level run to dive even deeper.  Here, we can see the inputs and outputs in full, as well as all the nested traces."
+msgstr ""
+
+#: ../docs/tracing.md:41
+msgid "![](tracing/explore_trace.png)"
+msgstr ""
+
+#: ../docs/tracing.md:43
+msgid "We can keep on exploring each of these nested traces in more detail. For example, here is the lowest level trace with the exact inputs/outputs to the LLM."
+msgstr ""
+
+#: ../docs/tracing.md:46
+msgid "![](tracing/explore_llm.png)"
+msgstr ""
+
+#: ../docs/tracing.md:48
+msgid "Changing Sessions"
+msgstr ""
+
+#: ../docs/tracing.md:49
+msgid "To initially record traces to a session other than `\"default\"`, you can set the `LANGCHAIN_SESSION` environment variable to the name of the session you want to record to:"
+msgstr ""
+
+#: ../docs/tracing.md:57
+msgid "To switch sessions mid-script or mid-notebook, do NOT set the `LANGCHAIN_SESSION` environment variable. Instead: `langchain.set_tracing_callback_manager(session_name=\"my_session\")`"
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:1
+msgid "Cloud Hosted Setup"
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:3
+msgid "We offer a hosted version of tracing at [langchainplus.vercel.app](https://langchainplus.vercel.app/). You can use this to view traces from your run without having to run the server locally."
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:5
+msgid "Note: we are currently only offering this to a limited number of users. The hosted platform is VERY alpha, in active development, and data might be dropped at any time. Don't depend on data being persisted in the system long term and don't log traces that may contain sensitive information. If you're interested in using the hosted platform, please fill out the form [here](https://forms.gle/tRCEMSeopZf6TE3b6)."
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:7
+#: ../docs/tracing/local_installation.md:5
+msgid "Installation"
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:9
+msgid "Login to the system and click \"API Key\" in the top right corner. Generate a new key and keep it safe. You will need it to authenticate with the system."
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:11
+#: ../docs/tracing/local_installation.md:23
+msgid "Environment Setup"
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:13
+#: ../docs/tracing/local_installation.md:25
+msgid "After installation, you must now set up your environment to use tracing."
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:15
+#: ../docs/tracing/local_installation.md:27
+msgid "This can be done by setting an environment variable in your terminal by running `export LANGCHAIN_HANDLER=langchain`."
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:17
+#: ../docs/tracing/local_installation.md:29
+msgid "You can also do this by adding the below snippet to the top of every script. **IMPORTANT:** this must go at the VERY TOP of your script, before you import anything from `langchain`."
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:24
+msgid "You will also need to set an environment variable to specify the endpoint and your API key. This can be done with the following environment variables:"
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:26
+msgid "`LANGCHAIN_ENDPOINT` = \"https://langchain-api-gateway-57eoxz8z.uc.gateway.dev\""
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:27
+msgid "`LANGCHAIN_API_KEY` - set this to the API key you generated during installation."
+msgstr ""
+
+#: ../docs/tracing/hosted_installation.md:29
+msgid "An example of adding all relevant environment variables is below:"
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:1
+msgid "Locally Hosted Setup"
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:3
+msgid "This page contains instructions for installing and then setting up the environment to use the locally hosted version of tracing."
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:7
+msgid "Ensure you have Docker installed (see [Get Docker](https://docs.docker.com/get-docker/)) and that it’s running."
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:8
+msgid "Install the latest version of `langchain`: `pip install langchain` or `pip install langchain -U` to upgrade your existing version."
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:10
+msgid "Run `langchain-server`. This command was installed automatically when you ran the above command (`pip install langchain`)."
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:11
+msgid "This will spin up the server in the terminal, hosted on port `4137` by default."
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:12
+msgid "Once you see the terminal output `langchain-langchain-frontend-1 | ➜ Local: [http://localhost:4173/](http://localhost:4173/)`, navigate to [http://localhost:4173/](http://localhost:4173/)"
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:16
+msgid "You should see a page with your tracing sessions. See the overview page for a walkthrough of the UI."
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:18
+msgid "Currently, trace data is not guaranteed to be persisted between runs of `langchain-server`. If you want to     persist your data, you can mount a volume to the Docker container. See the [Docker docs](https://docs.docker.com/storage/volumes/) for more info."
+msgstr ""
+
+#: ../docs/tracing/local_installation.md:20
+msgid "To stop the server, press `Ctrl+C` in the terminal where you ran `langchain-server`."
+msgstr ""
